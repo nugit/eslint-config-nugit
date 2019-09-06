@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nugit",
-  "version": "0.1.0",
+  "version": "0.1.0-rc.1",
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -28,13 +28,22 @@
   },
   "homepage": "https://github.com/nugit/eslint-config-nugit",
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "eslint": "^6.1.0",
-    "eslint-plugin-import": "^2.18.2"
-  },
-  "peerDependencies": {
-    "eslint": "^6.1.0",
+    "eslint-plugin-flowtype": "^4.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.1.0",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-ramda": "^2.5.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0"
   },

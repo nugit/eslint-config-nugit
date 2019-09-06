@@ -19,9 +19,9 @@ module.exports = {
       requireReturnForObjectLiteral: false,
     }],
 
-    // require parens in arrow function arguments
+    // require parens as-needed function arguments
     // https://eslint.org/docs/rules/arrow-parens
-    'arrow-parens': ['error', 'always'],
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
 
     // require space before/after arrow function's arrow
     // https://eslint.org/docs/rules/arrow-spacing
@@ -154,12 +154,20 @@ module.exports = {
 
     // import sorting
     // https://eslint.org/docs/rules/sort-imports
-    'sort-imports': ['off', {
-      ignoreCase: false,
-      ignoreDeclarationSort: false,
-      ignoreMemberSort: false,
-      memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
-    }],
+    'sort-imports': [
+      'error',
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: [
+          'none',
+          'all',
+          'multiple',
+          'single',
+        ],
+      },
+    ],
 
     // require a Symbol description
     // https://eslint.org/docs/rules/symbol-description

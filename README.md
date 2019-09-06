@@ -27,11 +27,17 @@ We export two ESLint configurations for your usage.
 
 ### eslint-config-nugit
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, and `eslint-plugin-jsx-a11y`. If you don't need React, see `eslint-config-nugit/base`.
+Our default export contains all of our ESLint rules, including ECMAScript 6+, FlowJS and React.
+
+It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, `eslint-plugin-react-hooks`,
+and `eslint-plugin-jsx-a11y`. If you don't need React, see `eslint-config-nugit/base`.
 
 - Add `"extends": "nugit"` to your .eslintrc.
 
 ### eslint-config-nugit/base
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.
+Our default export contains all of our ESLint rules, including ECMAScript 6+ and FlowJS.
+
+It requires `eslint` and `eslint-plugin-import`.
+
 - Add `"extends": "nugit/base"` to your .eslintrc

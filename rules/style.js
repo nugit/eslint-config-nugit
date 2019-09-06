@@ -21,7 +21,7 @@ module.exports = {
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     // require camel case names
-    camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
+    'camelcase': ['error', { properties: 'never', ignoreDestructuring: false }],
 
     // enforce or disallow capitalization of the first letter of a comment
     // https://eslint.org/docs/rules/capitalized-comments
@@ -118,7 +118,7 @@ module.exports = {
 
     // this option sets a specific tab width for your code
     // https://eslint.org/docs/rules/indent
-    indent: ['error', 2, {
+    'indent': ['error', 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
@@ -194,6 +194,7 @@ module.exports = {
     // specify the maximum length of a line in your program
     // https://eslint.org/docs/rules/max-len
     'max-len': ['error', 100, 2, {
+      ignorePattern: '^import ',
       ignoreUrls: true,
       ignoreComments: false,
       ignoreRegExpLiterals: true,
@@ -284,20 +285,13 @@ module.exports = {
     // disallow un-paren'd mixes of different operators
     // https://eslint.org/docs/rules/no-mixed-operators
     'no-mixed-operators': ['error', {
-      // the list of arthmetic groups disallows mixing `%` and `**`
-      // with other arithmetic operators.
       groups: [
-        ['%', '**'],
-        ['%', '+'],
-        ['%', '-'],
-        ['%', '*'],
-        ['%', '/'],
-        ['/', '*'],
-        ['&', '|', '<<', '>>', '>>>'],
-        ['==', '!=', '===', '!=='],
+        ['&', '|', '^', '~', '<<', '>>', '>>>'],
+        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
         ['&&', '||'],
+        ['in', 'instanceof'],
       ],
-      allowSamePrecedence: false,
+      allowSamePrecedence: true,
     }],
 
     // disallow mixed spaces and tabs for indentation
@@ -390,10 +384,10 @@ module.exports = {
     // enforce line breaks between braces
     // https://eslint.org/docs/rules/object-curly-newline
     'object-curly-newline': ['error', {
-      ObjectExpression: { minProperties: 4, multiline: true, consistent: true },
-      ObjectPattern: { minProperties: 4, multiline: true, consistent: true },
-      ImportDeclaration: { minProperties: 4, multiline: true, consistent: true },
-      ExportDeclaration: { minProperties: 4, multiline: true, consistent: true },
+      ObjectExpression: { minProperties: 6, multiline: true, consistent: true },
+      ObjectPattern: { minProperties: 6, multiline: true, consistent: true },
+      ImportDeclaration: 'never',
+      ExportDeclaration: { minProperties: 6, multiline: true, consistent: true },
     }],
 
     // enforce "same line" or "multiple line" on object properties.
@@ -428,7 +422,11 @@ module.exports = {
 
     // Require or disallow padding lines between statements
     // https://eslint.org/docs/rules/padding-line-between-statements
-    'padding-line-between-statements': 'off',
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: ['export', 'function', 'class', 'cjs-export'] },
+      { blankLine: 'any', prev: ['export', 'cjs-export'], next: ['export', 'cjs-export'] },
+    ],
 
     // Prefer use of an object spread over Object.assign
     // https://eslint.org/docs/rules/prefer-object-spread
@@ -436,17 +434,17 @@ module.exports = {
 
     // require quotes around object literal property names
     // https://eslint.org/docs/rules/quote-props.html
-    'quote-props': ['error', 'as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    'quote-props': ['error', 'consistent-as-needed', { keywords: false, unnecessary: true, numbers: false }],
 
     // specify whether double or single quotes should be used
-    quotes: ['error', 'single', { avoidEscape: true }],
+    'quotes': ['error', 'single', { avoidEscape: true }],
 
     // do not require jsdoc
     // https://eslint.org/docs/rules/require-jsdoc
     'require-jsdoc': 'off',
 
     // require or disallow use of semicolons instead of ASI
-    semi: ['error', 'always'],
+    'semi': ['error', 'always'],
 
     // enforce spacing before and after semicolons
     'semi-spacing': ['error', { before: false, after: true }],

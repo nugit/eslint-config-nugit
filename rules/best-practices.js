@@ -11,7 +11,7 @@ module.exports = {
     'block-scoped-var': 'error',
 
     // specify the maximum cyclomatic complexity allowed in a program
-    complexity: ['off', 11],
+    'complexity': ['off', 11],
 
     // enforce that class methods use "this"
     // https://eslint.org/docs/rules/class-methods-use-this
@@ -23,7 +23,7 @@ module.exports = {
     'consistent-return': 'error',
 
     // specify curly brace conventions for all control statements
-    curly: ['error', 'multi-line'],
+    'curly': ['error', 'multi-line'],
 
     // require default case in switch statements
     'default-case': ['error', { commentPattern: '^no default$' }],
@@ -37,7 +37,7 @@ module.exports = {
 
     // require the use of === and !==
     // https://eslint.org/docs/rules/eqeqeq
-    eqeqeq: ['error', 'always', { null: 'ignore' }],
+    'eqeqeq': ['error', 'always'],
 
     // make sure for-in loops have an if statement
     'guard-for-in': 'error',
@@ -314,7 +314,7 @@ module.exports = {
     'prefer-named-capture-group': 'off',
 
     // require use of the second argument for parseInt()
-    radix: 'error',
+    'radix': 'error',
 
     // require `await` in `async function` (note: this is a horrible rule that should never be used)
     // https://eslint.org/docs/rules/require-await
@@ -332,6 +332,6 @@ module.exports = {
     'wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
 
     // require or disallow Yoda conditions
-    yoda: 'error',
+    'yoda': 'error',
   },
 };
