@@ -379,7 +379,7 @@ module.exports = {
     // Enforce a defaultProps definition for every prop that is not a required prop
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/require-default-props.md
     'react/require-default-props': ['error', {
-      forbidDefaultForRequired: true,
+      forbidDefaultForRequired: false,
     }],
 
     // Forbids using non-exported propTypes
@@ -394,7 +394,7 @@ module.exports = {
 
     // Enforce all defaultProps have a corresponding non-required PropType
     // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/default-props-match-prop-types.md
-    'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
+    'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: true }],
 
     // Prevent usage of shouldComponentUpdate when extending React.PureComponent
     // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/no-redundant-should-component-update.md
@@ -426,7 +426,7 @@ module.exports = {
 
     // Enforce consistent usage of destructuring assignment of props, state, and context
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/destructuring-assignment.md
-    'react/destructuring-assignment': ['error', 'always'],
+    'react/destructuring-assignment': ['off', 'always'],
 
     // Prevent using this.state within a this.setState
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/no-access-state-in-setstate.md
@@ -473,16 +473,16 @@ module.exports = {
     // Enforce state initialization style
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
     // TODO: set to "never" once babel-preset-airbnb supports public class fields
-    'react/state-in-constructor': ['error', 'always'],
+    'react/state-in-constructor': ['off', 'never'],
 
     // Enforces where React component static properties should be positioned
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
     // TODO: set to "static public field" once babel-preset-airbnb supports public class fields
-    'react/static-property-placement': ['error', 'property assignment'],
+    'react/static-property-placement': ['error', 'static public field'],
 
     // Disallow JSX props spreading
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-spreading.md
-    'react/jsx-props-no-spreading': ['error', {
+    'react/jsx-props-no-spreading': ['off', {
       html: 'enforce',
       custom: 'enforce',
       exceptions: [],
