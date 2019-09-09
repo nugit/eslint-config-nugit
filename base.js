@@ -26,7 +26,7 @@ module.exports = {
         'tests/**', // also common npm pattern
         'test.{js,jsx}', // repos with a single test file
         'test-*.{js,jsx}', // repos with multiple top-level test files
-        '**/*{.,_}{test,spec,stories,bench}.{js,jsx}', // tests where the extension or filename suffix denotes that it is a test
+        '**/*{.,_}{test,spec,stories,bench,fixture}.{js,jsx}', // tests where the extension or filename suffix denotes that it is a test
       ],
       env: {
         'jest': true,
