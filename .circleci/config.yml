@@ -36,6 +36,9 @@ jobs:
           paths:
             - node_modules
             - yarn.lock
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
       - run: npm publish
 
 workflows:
