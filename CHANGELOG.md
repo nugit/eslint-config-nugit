@@ -1,3 +1,7 @@
+# Unreleased
+
+- Set flow delimiter-dangle always-multiline for inexact object notation.
+
 # v0.2.0
 
 - Allow usage of dev dependencies in fixture files
