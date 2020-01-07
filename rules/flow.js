@@ -5,14 +5,14 @@ module.exports = {
     'flowtype',
   ],
 
-  // View link below for react rules documentation
-  // https://github.com/yannickcr/eslint-plugin-react#list-of-supported-rules
+  // View link below for flow rules documentation
+  // https://github.com/gajus/eslint-plugin-flowtype#eslint-plugin-flowtype-rules
   rules: {
     'flowtype/array-style-complex-type': ['error', 'verbose'],
     'flowtype/array-style-simple-type': ['error', 'shorthand'],
     'flowtype/boolean-style': ['error', 'boolean'],
     'flowtype/define-flow-type': 'warn',
-    'flowtype/delimiter-dangle': ['error', 'always-multiline'],
+    'flowtype/delimiter-dangle': ['error', 'always-multiline', 'always-multiline'],
     'flowtype/generic-spacing': ['error', 'never'],
     'flowtype/newline-after-flow-annotation': ['error', 'always'],
     'flowtype/object-type-delimiter': ['error', 'comma'],

@@ -1,6 +1,6 @@
 # Unreleased
 
-
+- Set flow delimiter-dangle always-multiline for inexact object notation.
 - Add eslint-plugin-eslint-comments
 - Add react/jsx-no-useless-fragment
 - Upgrade peer-dependencies
