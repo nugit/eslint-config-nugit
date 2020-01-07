@@ -2,6 +2,7 @@
 
 
 - Add eslint-plugin-eslint-comments
+- Upgrade peer-dependencies
 
 # v0.2.0
 
