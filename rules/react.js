@@ -314,6 +314,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
     'react/jsx-no-comment-textnodes': 'error',
 
+    // prevent usage of useless Fragment
+    // https://github.com/yannickcr/eslint-plugin-react/blob/v7.15.0/docs/rules/jsx-no-useless-fragment.md
+    'react/jsx-no-useless-fragment': 'error',
+
     // disallow using React.render/ReactDOM.render's return value
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
     'react/no-render-return-value': 'error',
