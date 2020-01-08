@@ -1,6 +1,7 @@
 # Unreleased
 
 - Set flow delimiter-dangle always-multiline for inexact object notation.
+- Add react-hooks plugin
 
 # v0.2.0
 
