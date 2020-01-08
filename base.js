@@ -10,6 +10,7 @@ module.exports = {
     './rules/strict',
     './rules/ramda.js',
     './rules/flow.js',
+    './rules/eslint-comments',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2018,
