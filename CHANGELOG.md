@@ -1,3 +1,9 @@
+# v0.3.1
+
+## Changes
+
+- Comma dangle is require for Flow inexact object notation (trailing ...) when multiline.
+
 # v0.3.0
 
 ## Changes
