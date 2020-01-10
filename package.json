@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nugit",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ugit/eslint-config-nugit"
+    "url": "https://github.com/nugit/eslint-config-nugit"
   },
   "keywords": [
     "eslint",
