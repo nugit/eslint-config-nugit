@@ -1,4 +1,4 @@
-# v0.4.0
+# Unreleased
 
 ## Changes
 
@@ -7,6 +7,10 @@
 - upgrade `eslint-plugin-react` to `^7.20.0`
 - Fix dependency list in README
 
+## Likely to cause new errors
+
+- `require-atomic-updates`: `error`
+- 
 
 # v0.3.1
 
