@@ -9,8 +9,11 @@
 
 ## Likely to cause new errors
 
-- `require-atomic-updates`: `error`
-- 
+- `require-atomic-updates`
+- `flowtype/require-compound-type-alias`: `always`
+- `flowtype/require-readonly-react-props`
+- `flowtype/require-types-at-top`
+- `lowtype/type-import-style`: `identifier`
 
 # v0.3.1
 
