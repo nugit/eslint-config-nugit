@@ -13,7 +13,15 @@
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/require-types-at-top`
-- `lowtype/type-import-style`: `identifier`
+- `flowtype/type-import-style`: `identifier`
+- `import/no-namespace`
+- `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`
+- `import/no-unassigned-import`
+- `import/no-anonymous-default-export`: for functions & classes
+- `import/exports-last`
+- `import/group-exports`
+- `import/no-unused-modules`
+
 
 # v0.3.1
 
