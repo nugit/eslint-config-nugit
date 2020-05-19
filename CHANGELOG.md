@@ -11,6 +11,13 @@
 
 - `require-atomic-updates`
 - `no-undefined`
+- `array-bracket-newline`
+- `func-names`: is now reported as error instead of warning
+- `func-style`
+- `lines-around-directive`: removed & replaced by `padding-line-between-statements`
+- `no-multiple-empty-lines`: `{ max: 1, maxBOF: 0, maxEOF: 0 }`
+- `no-restricted-syntax`: allow `for..of` usage
+- `sort-keys`
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/require-types-at-top`
