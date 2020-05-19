@@ -29,7 +29,11 @@
 - `import/exports-last`
 - `import/group-exports`
 - `import/no-unused-modules`
-
+- `react/function-component-definition`
+- `react/jsx-key`
+- `react/no-direct-mutation-state`
+- `react/state-in-constructor`
+- `react/prefer-read-only-props`
 
 # v0.3.1
 
