@@ -1,3 +1,9 @@
+# v0.4.0
+
+## Changes
+
+- **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.0.2`
+
 # v0.3.1
 
 ## Changes
