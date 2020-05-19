@@ -3,6 +3,8 @@
 ## Changes
 
 - **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.0.2`
+- Fix dependency list in README
+
 
 # v0.3.1
 
