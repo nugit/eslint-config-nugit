@@ -3,6 +3,7 @@
 ## Changes
 
 - **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.0.2`
+- **[Breaking]**: upgrade `eslint-plugin-flowtype` to `^5.1.0`
 - Fix dependency list in README
 
 
