@@ -10,6 +10,7 @@
 ## Likely to cause new errors
 
 - `require-atomic-updates`
+- `no-undefined`
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/require-types-at-top`
