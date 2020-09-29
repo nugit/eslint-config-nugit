@@ -30,6 +30,7 @@
 - `flowtype/type-import-style`: `identifier`
 - `flowtype/no-existential-type`
 - `flowtype/no-mutable-array`
+- `flowtype/spread-exact-type`
 - `import/no-namespace`
 - `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`
 - `import/no-unassigned-import`

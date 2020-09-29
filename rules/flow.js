@@ -41,8 +41,7 @@ module.exports = {
     'flowtype/space-after-type-colon': ['error', 'always'],
     'flowtype/space-before-generic-bracket': ['error', 'never'],
     'flowtype/space-before-type-colon': ['error', 'never'],
-    // TODO: enable?
-    'flowtype/spread-exact-type': 'off',
+    'flowtype/spread-exact-type': 'error',
     'flowtype/type-id-match': 'off',
     // Use identifier as declaration imports are not well supported by vscode
     'flowtype/type-import-style': ['error', 'identifier'],
