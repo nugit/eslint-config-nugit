@@ -19,8 +19,7 @@ module.exports = {
     'flowtype/no-existential-type': 'error',
     'flowtype/no-flow-fix-me-comments': 'off',
     'flowtype/no-mixed': 'off',
-    // TODO: enable?
-    'flowtype/no-mutable-array': 'off',
+    'flowtype/no-mutable-array': 'error',
     'flowtype/no-primitive-constructor-types': 'error',
     'flowtype/no-types-missing-file-annotation': 'error',
     'flowtype/no-unused-expressions': 'error',
