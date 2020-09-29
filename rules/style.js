@@ -447,7 +447,7 @@ module.exports = {
     'semi-style': ['error', 'last'],
 
     // requires object keys to be sorted
-    'sort-keys': ['error', 'asc', { caseSensitive: false, natural: true }],
+    'sort-keys': ['off', 'asc', { caseSensitive: false, natural: true }],
 
     // sort variables within the same declaration block
     'sort-vars': 'off',
