@@ -3,8 +3,14 @@
 ## Changes
 
 - **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.0.2`
-- **[Breaking]**: upgrade `eslint-plugin-flowtype` to `^5.1.0`
-- upgrade `eslint-plugin-react` to `^7.20.0`
+- **[Breaking]**: upgrade `eslint-plugin-flowtype` to `^5.2.0`
+- **[Breaking]**: remove `eslint-plugin-ramda` to `^5.1.0`
+- upgrade `babel-eslint` to `^10.1.0`
+- upgrade `eslint-plugin-eslint-comments` to `^3.2.0`
+- upgrade `eslint-plugin-import` to `^2.22.0`
+- upgrade `eslint-plugin-jsx-a11y` to `^6.3.1`
+- upgrade `eslint-plugin-react` to `^7.21.2`
+- upgrade `eslint-plugin-react-hooks` to `^4.1.2`
 - Fix dependency list in README
 
 ## Likely to cause new errors
