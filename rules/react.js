@@ -57,7 +57,7 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/v7.20.0/docs/rules/function-component-definition.md
     'react/function-component-definition': ['error', {
       namedComponents: 'function-declaration',
-      unnamedComponents: 'function-declaration',
+      unnamedComponents: 'function-expression',
     }],
 
     // Enforce boolean attributes notation in JSX
