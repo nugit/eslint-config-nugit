@@ -150,13 +150,13 @@ module.exports = {
           ['external'],
           ['internal'],
           ['parent'],
-          ['sibling']
+          ['sibling'],
         ],
         'newlines-between': 'never',
         'alphabetize': {
-          'order': 'asc',
-          'caseInsensitive': true,
-        }
+          order: 'asc',
+          caseInsensitive: true,
+        },
       },
     ],
 

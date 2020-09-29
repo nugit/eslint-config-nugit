@@ -16,7 +16,6 @@ module.exports = {
     'flowtype/generic-spacing': ['error', 'never'],
     'flowtype/newline-after-flow-annotation': ['error', 'always'],
     'flowtype/no-mixed': 'off',
-    'flowtype/no-dupe-keys': 'error',
     // TODO: enable?
     'flowtype/no-existential-type': 'off',
     'flowtype/no-flow-fix-me-comments': 'off',
@@ -40,7 +39,7 @@ module.exports = {
     'flowtype/require-valid-file-annotation': 'off',
     'flowtype/require-variable-type': 'off',
     'flowtype/semi': ['error', 'always'],
-    'flowtype/sort-keys': ['error', 'asc', { caseSensitive: false, natural: true }],
+    'flowtype/sort-keys': ['error', 'asc'],
     'flowtype/space-after-type-colon': ['error', 'always'],
     'flowtype/space-before-generic-bracket': ['error', 'never'],
     'flowtype/space-before-type-colon': ['error', 'never'],
