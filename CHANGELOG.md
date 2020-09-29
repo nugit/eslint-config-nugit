@@ -24,11 +24,11 @@
 - `lines-around-directive`: removed & replaced by `padding-line-between-statements`
 - `no-multiple-empty-lines`: `{ max: 1, maxBOF: 0, maxEOF: 0 }`
 - `no-restricted-syntax`: allow `for..of` usage
-- `sort-keys`
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/require-types-at-top`
 - `flowtype/type-import-style`: `identifier`
+- `flowtype/no-existential-type`
 - `import/no-namespace`
 - `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`
 - `import/no-unassigned-import`

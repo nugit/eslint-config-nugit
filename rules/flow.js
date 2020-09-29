@@ -15,9 +15,8 @@ module.exports = {
     'flowtype/delimiter-dangle': ['error', 'always-multiline', 'always-multiline', 'always-multiline'],
     'flowtype/generic-spacing': ['error', 'never'],
     'flowtype/newline-after-flow-annotation': ['error', 'always'],
-    'flowtype/no-mixed': 'off',
     // TODO: enable?
-    'flowtype/no-existential-type': 'off',
+    'flowtype/no-existential-type': 'error',
     'flowtype/no-flow-fix-me-comments': 'off',
     'flowtype/no-mixed': 'off',
     // TODO: enable?
