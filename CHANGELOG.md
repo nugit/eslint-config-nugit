@@ -17,7 +17,6 @@
 ## Likely to cause new errors
 
 - `require-atomic-updates`
-- `no-undefined`
 - `array-bracket-newline`
 - `func-names`: is now reported as error instead of warning
 - `func-style`
@@ -27,17 +26,13 @@
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/require-types-at-top`
-- `flowtype/type-import-style`: `identifier`
 - `flowtype/no-existential-type`
-- `flowtype/no-mutable-array`
-- `flowtype/spread-exact-type`
 - `import/no-namespace`
 - `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`
 - `import/no-unassigned-import`
 - `import/no-anonymous-default-export`: for functions & classes
 - `import/exports-last`
 - `import/group-exports`
-- `import/no-unused-modules`
 - `react/function-component-definition`
 - `react/jsx-key`
 - `react/no-direct-mutation-state`

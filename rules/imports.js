@@ -245,7 +245,7 @@ module.exports = {
 
     // Forbid cyclical dependencies between modules
     // https://github.com/benmosher/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
-    'import/no-cycle': ['error', { maxDepth: Infinity }],
+    'import/no-cycle': ['error', { ignoreExternal: true, maxDepth: Infinity }],
 
     // Ensures that there are no useless path segments
     // https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
@@ -264,7 +264,7 @@ module.exports = {
 
     // Reports modules without any exports, or with unused exports
     // https://github.com/benmosher/eslint-plugin-import/blob/f63dd261809de6883b13b6b5b960e6d7f42a7813/docs/rules/no-unused-modules.md
-    'import/no-unused-modules': ['error', {
+    'import/no-unused-modules': ['off', {
       missingExports: true,
       unusedExports: true,
     }],
