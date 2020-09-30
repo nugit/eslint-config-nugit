@@ -25,7 +25,6 @@
 - `no-restricted-syntax`: allow `for..of` usage
 - `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
-- `flowtype/require-types-at-top`
 - `flowtype/no-existential-type`
 - `import/no-namespace`
 - `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`

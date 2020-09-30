@@ -32,7 +32,7 @@ module.exports = {
     'flowtype/require-parameter-type': 'off',
     'flowtype/require-readonly-react-props': 'error',
     'flowtype/require-return-type': 'off',
-    'flowtype/require-types-at-top': 'error',
+    'flowtype/require-types-at-top': 'off',
     'flowtype/require-valid-file-annotation': 'off',
     'flowtype/require-variable-type': 'off',
     'flowtype/semi': ['error', 'always'],
