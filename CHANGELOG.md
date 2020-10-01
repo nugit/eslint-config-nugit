@@ -23,7 +23,6 @@
 - `lines-around-directive`: removed & replaced by `padding-line-between-statements`
 - `no-multiple-empty-lines`: `{ max: 1, maxBOF: 0, maxEOF: 0 }`
 - `no-restricted-syntax`: allow `for..of` usage
-- `flowtype/require-compound-type-alias`: `always`
 - `flowtype/require-readonly-react-props`
 - `flowtype/no-existential-type`
 - `import/no-namespace`

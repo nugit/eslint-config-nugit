@@ -25,7 +25,7 @@ module.exports = {
     // TODO: disable any?
     'flowtype/no-weak-types': ['error', { any: false }],
     'flowtype/object-type-delimiter': ['error', 'comma'],
-    'flowtype/require-compound-type-alias': ['error', 'always'],
+    'flowtype/require-compound-type-alias': ['off', 'always'],
     'flowtype/require-exact-type': 'off',
     'flowtype/require-indexer-name': 'off',
     'flowtype/require-inexact-type': 'off',
