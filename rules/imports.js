@@ -157,6 +157,12 @@ module.exports = {
           order: 'asc',
           caseInsensitive: true,
         },
+        'pathGroups': [
+          {
+            pattern: '$*/**',
+            group: 'internal',
+          },
+        ],
       },
     ],
 
