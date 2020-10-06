@@ -13,6 +13,7 @@
 - upgrade `eslint-plugin-react` to `^7.21.2`
 - upgrade `eslint-plugin-react-hooks` to `^4.1.2`
 - Fix dependency list in README
+- Consider import starting with $ to be internal
 
 ## Likely to cause new errors
 
