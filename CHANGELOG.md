@@ -2,16 +2,16 @@
 
 ## Changes
 
-- **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.0.2`
+- **[Breaking]**: upgrade `eslint` to `^7.10.0`
+- **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.1.2`
 - **[Breaking]**: upgrade `eslint-plugin-flowtype` to `^5.2.0`
 - **[Breaking]**: remove `eslint-plugin-ramda` to `^5.1.0`
 - **[Breaking]**: minimum supported NodeJs version 12.18
 - upgrade `babel-eslint` to `^10.1.0`
 - upgrade `eslint-plugin-eslint-comments` to `^3.2.0`
-- upgrade `eslint-plugin-import` to `^2.22.0`
+- upgrade `eslint-plugin-import` to `^2.22.1`
 - upgrade `eslint-plugin-jsx-a11y` to `^6.3.1`
 - upgrade `eslint-plugin-react` to `^7.21.2`
-- upgrade `eslint-plugin-react-hooks` to `^4.1.2`
 - Fix dependency list in README
 - Consider import starting with $ to be internal
 
