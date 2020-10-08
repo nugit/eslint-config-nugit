@@ -1,3 +1,43 @@
+# Unreleased
+
+## Changes
+
+- **[Breaking]**: upgrade `eslint` to `^7.10.0`
+- **[Breaking]**: upgrade `eslint-plugin-react-hooks` to `^4.1.2`
+- **[Breaking]**: upgrade `eslint-plugin-flowtype` to `^5.2.0`
+- **[Breaking]**: remove `eslint-plugin-ramda` to `^5.1.0`
+- **[Breaking]**: minimum supported NodeJs version 12.18
+- upgrade `babel-eslint` to `^10.1.0`
+- upgrade `eslint-plugin-eslint-comments` to `^3.2.0`
+- upgrade `eslint-plugin-import` to `^2.22.1`
+- upgrade `eslint-plugin-jsx-a11y` to `^6.3.1`
+- upgrade `eslint-plugin-react` to `^7.21.2`
+- Fix dependency list in README
+- Consider import starting with $ to be internal
+
+## Likely to cause new errors
+
+- `require-atomic-updates`
+- `array-bracket-newline`
+- `func-names`: is now reported as error instead of warning
+- `func-style`
+- `lines-around-directive`: removed & replaced by `padding-line-between-statements`
+- `no-multiple-empty-lines`: `{ max: 1, maxBOF: 0, maxEOF: 0 }`
+- `no-restricted-syntax`: allow `for..of` usage
+- `flowtype/require-readonly-react-props`
+- `flowtype/no-existential-type`
+- `import/no-namespace`
+- `import/order`: add `alphabetize: { order: 'asc' 'caseInsensitive': true }` & change `groups` to the following - `order: `builtin`, `external`, `internal`, `parent`, `sibling`
+- `import/no-unassigned-import`
+- `import/no-anonymous-default-export`: for functions & classes
+- `import/exports-last`
+- `import/group-exports`
+- `react/function-component-definition`
+- `react/jsx-key`
+- `react/no-direct-mutation-state`
+- `react/state-in-constructor`
+- `react/prefer-read-only-props`
+
 # v0.3.1
 
 ## Changes

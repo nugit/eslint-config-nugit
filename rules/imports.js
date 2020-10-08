@@ -129,9 +129,8 @@ module.exports = {
     'import/no-duplicates': 'error',
 
     // disallow namespace imports
-    // TODO: enable?
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-namespace.md
-    'import/no-namespace': 'off',
+    'import/no-namespace': 'error',
 
     // Ensure consistent use of file extension within the import path
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
@@ -143,11 +142,30 @@ module.exports = {
 
     // ensure absolute imports are above relative imports and that unassigned imports are ignored
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md
-    // TODO: enforce a stricter convention in module import order?
     'import/order': [
       'error', {
-        'groups': [['builtin', 'external', 'internal']],
+        'groups': [
+          ['builtin'],
+          ['external'],
+          ['internal'],
+          ['parent'],
+          ['sibling'],
+        ],
         'newlines-between': 'never',
+        'alphabetize': {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+        'pathGroups': [
+          {
+            pattern: '$*/**',
+            group: 'internal',
+          },
+          {
+            pattern: '$*',
+            group: 'internal',
+          },
+        ],
       },
     ],
 
@@ -195,7 +213,7 @@ module.exports = {
     // Prevent unassigned imports
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unassigned-import.md
     // importing for side effects is perfectly acceptable, if you need side effects.
-    'import/no-unassigned-import': 'off',
+    'import/no-unassigned-import': 'error',
 
     // Prevent importing the default as if it were named
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-default.md
@@ -203,25 +221,24 @@ module.exports = {
 
     // Reports if a module's default export is unnamed
     // https://github.com/benmosher/eslint-plugin-import/blob/d9b712ac7fd1fddc391f7b234827925c160d956f/docs/rules/no-anonymous-default-export.md
-    'import/no-anonymous-default-export': ['off', {
-      allowArray: false,
+    'import/no-anonymous-default-export': ['error', {
+      allowArray: true,
       allowArrowFunction: false,
       allowAnonymousClass: false,
       allowAnonymousFunction: false,
-      allowLiteral: false,
-      allowObject: false,
+      allowLiteral: true,
+      allowObject: true,
     }],
 
     // This rule enforces that all exports are declared at the bottom of the file.
     // https://github.com/benmosher/eslint-plugin-import/blob/98acd6afd04dcb6920b81330114e146dc8532ea4/docs/rules/exports-last.md
-    // TODO: enable?
-    'import/exports-last': 'off',
+    'import/exports-last': 'error',
 
     // Reports when named exports are not grouped together in a single export declaration
     // or when multiple assignments to CommonJS module.exports or exports object are present
     // in a single file.
     // https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/group-exports.md
-    'import/group-exports': 'off',
+    'import/group-exports': 'error',
 
     // forbid default exports. this is a terrible rule, do not use it.
     // https://github.com/benmosher/eslint-plugin-import/blob/44a038c06487964394b1e15b64f3bd34e5d40cde/docs/rules/no-default-export.md
@@ -237,7 +254,7 @@ module.exports = {
 
     // Forbid cyclical dependencies between modules
     // https://github.com/benmosher/eslint-plugin-import/blob/d81f48a2506182738409805f5272eff4d77c9348/docs/rules/no-cycle.md
-    'import/no-cycle': ['error', { maxDepth: Infinity }],
+    'import/no-cycle': ['error', { ignoreExternal: true, maxDepth: Infinity }],
 
     // Ensures that there are no useless path segments
     // https://github.com/benmosher/eslint-plugin-import/blob/ebafcbf59ec9f653b2ac2a0156ca3bcba0a7cf57/docs/rules/no-useless-path-segments.md
@@ -256,9 +273,7 @@ module.exports = {
 
     // Reports modules without any exports, or with unused exports
     // https://github.com/benmosher/eslint-plugin-import/blob/f63dd261809de6883b13b6b5b960e6d7f42a7813/docs/rules/no-unused-modules.md
-    // TODO: enable, semver-major
     'import/no-unused-modules': ['off', {
-      ignoreExports: [],
       missingExports: true,
       unusedExports: true,
     }],

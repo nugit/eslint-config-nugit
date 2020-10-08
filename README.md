@@ -39,6 +39,6 @@ see `eslint-config-nugit/base`.
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+ and FlowJS.
 
-It requires `eslint` and `eslint-plugin-import`.
+It requires `eslint`, `eslint-plugin-import` and `eslint-plugin-flowtype`.
 
 - Add `"extends": "nugit/base"` to your .eslintrc
