@@ -53,6 +53,13 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/843d71a432baf0f01f598d7cf1eea75ad6896e4b/docs/rules/forbid-dom-props.md
     'react/forbid-dom-props': ['off', { forbid: [] }],
 
+    // Enforce a specific function type for function components.
+    // https://github.com/yannickcr/eslint-plugin-react/blob/v7.20.0/docs/rules/function-component-definition.md
+    'react/function-component-definition': ['error', {
+      namedComponents: 'function-declaration',
+      unnamedComponents: 'function-expression',
+    }],
+
     // Enforce boolean attributes notation in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
     'react/jsx-boolean-value': ['error', 'never', { always: [] }],
@@ -82,7 +89,7 @@ module.exports = {
 
     // Validate JSX has key prop when in array or iterator
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-key.md
-    'react/jsx-key': 'off',
+    'react/jsx-key': ['error', { checkFragmentShorthand: true }],
 
     // Limit maximum of props on a single line in JSX
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
@@ -177,7 +184,7 @@ module.exports = {
 
     // Prevent direct mutation of this.state
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
-    'react/no-direct-mutation-state': 'off',
+    'react/no-direct-mutation-state': 'error',
 
     // Prevent usage of isMounted
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
@@ -300,7 +307,7 @@ module.exports = {
 
     // Enforce JSX indentation
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md
-    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent': ['error', 2, { indentLogicalExpressions: true, checkAttributes: true }],
 
     // Disallow target="_blank" on links
     // https://github.com/yannickcr/eslint-plugin-react/blob/ac102885765be5ff37847a871f239c6703e1c7cc/docs/rules/jsx-no-target-blank.md
@@ -476,12 +483,10 @@ module.exports = {
 
     // Enforce state initialization style
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/state-in-constructor.md
-    // TODO: set to "never" once babel-preset-airbnb supports public class fields
-    'react/state-in-constructor': ['off', 'never'],
+    'react/state-in-constructor': ['error', 'never'],
 
     // Enforces where React component static properties should be positioned
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
-    // TODO: set to "static public field" once babel-preset-airbnb supports public class fields
     'react/static-property-placement': ['error', 'static public field'],
 
     // Disallow JSX props spreading
@@ -494,7 +499,7 @@ module.exports = {
 
     // Enforce that props are read-only
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
-    'react/prefer-read-only-props': 'off',
+    'react/prefer-read-only-props': 'error',
   },
 
   settings: {

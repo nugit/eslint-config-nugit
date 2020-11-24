@@ -1,11 +1,11 @@
 module.exports = {
-  extends: [
-    './base',
-  ].map(require.resolve),
   env: {
     'node': true,
     'shared-node-browser': false,
   },
+  extends: [
+    './base',
+  ].map(require.resolve),
   rules: {
     'import/no-extraneous-dependencies': [
       'error',
@@ -14,6 +14,7 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
+    'import/no-unused-modules': 'off',
     'no-console': 'off',
   },
 };

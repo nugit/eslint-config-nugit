@@ -2,12 +2,10 @@ module.exports = {
   rules: {
     // enforce line breaks after opening and before closing array brackets
     // https://eslint.org/docs/rules/array-bracket-newline
-    // TODO: enable? semver-major
-    'array-bracket-newline': ['off', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
+    'array-bracket-newline': ['error', 'consistent'], // object option alternative: { multiline: true, minItems: 3 }
 
     // enforce line breaks between array elements
     // https://eslint.org/docs/rules/array-element-newline
-    // TODO: enable? semver-major
     'array-element-newline': ['off', { multiline: true, minItems: 3 }],
 
     // enforce spacing inside array brackets
@@ -90,12 +88,11 @@ module.exports = {
 
     // require function expressions to have a name
     // https://eslint.org/docs/rules/func-names
-    'func-names': 'warn',
+    'func-names': 'error',
 
     // enforces use of function declarations or expressions
     // https://eslint.org/docs/rules/func-style
-    // TODO: enable
-    'func-style': ['off', 'expression'],
+    'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
 
     // enforce consistent line breaks inside function parentheses
     // https://eslint.org/docs/rules/function-paren-newline
@@ -163,7 +160,6 @@ module.exports = {
 
     // enforce position of line comments
     // https://eslint.org/docs/rules/line-comment-position
-    // TODO: enable?
     'line-comment-position': ['off', {
       position: 'above',
       ignorePattern: '',
@@ -183,7 +179,8 @@ module.exports = {
 
     // require or disallow newlines around directives
     // https://eslint.org/docs/rules/lines-around-directive
-    'lines-around-directive': ['error', {
+    // Deprecated in favor of padding-line-between-statements
+    'lines-around-directive': ['off', {
       before: 'always',
       after: 'always',
     }],
@@ -303,7 +300,7 @@ module.exports = {
 
     // disallow multiple empty lines, only one newline at the end, and no new lines at the beginning
     // https://eslint.org/docs/rules/no-multiple-empty-lines
-    'no-multiple-empty-lines': ['error', { max: 2, maxBOF: 1, maxEOF: 0 }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
 
     // disallow negated conditions
     // https://eslint.org/docs/rules/no-negated-condition
@@ -326,10 +323,6 @@ module.exports = {
       {
         selector: 'ForInStatement',
         message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
-      },
-      {
-        selector: 'ForOfStatement',
-        message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
       },
       {
         selector: 'LabeledStatement',
