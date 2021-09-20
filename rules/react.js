@@ -210,6 +210,10 @@ module.exports = {
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     'react/prefer-es6-class': ['error', 'always'],
 
+    // Prefer exact proptype definitions
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-exact-props.md
+    'react/prefer-exact-props': ['error'],
+
     // Require stateless functions when not using lifecycle methods, setState or ref
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
     'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
