@@ -7,7 +7,7 @@
     "lint": "eslint --report-unused-disable-directives .",
     "deploy:client": "semantic-release --deps.bump=inherit",
     "deploy:client:local": "CI=true LOCAL_RELEASE=true semantic-release --deps.bump=inherit",
-    "postinstall": "husky install $PWD/.husky"
+    "prepare": "husky install $PWD/.husky"
   },
   "repository": {
     "type": "git",
