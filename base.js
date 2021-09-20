@@ -12,7 +12,7 @@ module.exports = {
     './rules/eslint-comments',
   ].map(require.resolve),
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   env: {
