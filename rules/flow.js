@@ -47,6 +47,7 @@ module.exports = {
     'flowtype/union-intersection-spacing': ['error', 'always'],
     'flowtype/use-flow-type': 'warn',
     'flowtype/no-duplicate-type-union-intersection-members': 'error',
+    'flowtype/sort-type-union-intersection-members': 'error',
   },
 
   settings: {
