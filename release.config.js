@@ -5,7 +5,12 @@ const mainConfig = {
   ],
   repositoryUrl: 'https://github.com/nugit/eslint-config-nugit.git',
   plugins: [
-    '@semantic-release/commit-analyzer',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        preset: 'conventionalcommits'
+      }
+    ],
     '@semantic-release/release-notes-generator',
     [
       '@semantic-release/changelog',
