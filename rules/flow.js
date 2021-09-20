@@ -4,7 +4,7 @@ module.exports = {
   parserOptions: {
     requireConfigFile: false,
     babelOptions: {
-      presets: ['@babel/preset-flow'],
+      presets: ['@babel/preset-env', '@babel/preset-flow', '@babel/preset-react'],
     },
   },
 
