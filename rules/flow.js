@@ -10,6 +10,7 @@ module.exports = {
 
   plugins: [
     'flowtype',
+    'fb-flow',
   ],
 
   // View link below for flow rules documentation
@@ -57,6 +58,7 @@ module.exports = {
     'flowtype/sort-type-union-intersection-members': 'error',
     'flowtype/enforce-line-break': 'error',
     'flowtype/quotes': ['error', 'single'],
+    'fb-flow/use-indexed-access-type': 'error'
   },
 
   settings: {
