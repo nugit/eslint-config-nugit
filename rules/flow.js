@@ -48,6 +48,7 @@ module.exports = {
     'flowtype/use-flow-type': 'warn',
     'flowtype/no-duplicate-type-union-intersection-members': 'error',
     'flowtype/sort-type-union-intersection-members': 'error',
+    'flowtype/enforce-line-break': 'error',
   },
 
   settings: {
