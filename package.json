@@ -34,7 +34,7 @@
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.10.0",
+    "eslint": "^7.32.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
