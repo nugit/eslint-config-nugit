@@ -49,7 +49,7 @@ module.exports = {
     'flowtype/no-duplicate-type-union-intersection-members': 'error',
     'flowtype/sort-type-union-intersection-members': 'error',
     'flowtype/enforce-line-break': 'error',
-    'flowtype/quote': ['error', 'single'],
+    'flowtype/quotes': ['error', 'single'],
   },
 
   settings: {
