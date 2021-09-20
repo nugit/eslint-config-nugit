@@ -150,8 +150,6 @@ module.exports = {
           ['internal'],
           ['parent'],
           ['sibling'],
-          ['index'],
-          ['type'],
         ],
         'newlines-between': 'never',
         'alphabetize': {
