@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint --report-unused-disable-directives .",
     "deploy:client": "semantic-release --deps.bump=inherit",
-    "deploy:client:local": "CI=true LOCAL_RELEASE=true semantic-release --deps.bump=inherit"
+    "deploy:client:local": "CI=true LOCAL_RELEASE=true semantic-release --deps.bump=inherit",
+    "postinstall": "husky install $PWD/.husky"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/eslint-parser": "^7.15.7",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
     "@semantic-release/git": "^9.0.1",
@@ -42,6 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.25.3",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^7.0.2",
     "semantic-release": "^18.0.0",
     "semantic-release-slack-bot": "^2.1.1"
   },
