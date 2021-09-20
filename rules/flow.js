@@ -46,6 +46,7 @@ module.exports = {
     'flowtype/type-import-style': ['off', 'declaration'],
     'flowtype/union-intersection-spacing': ['error', 'always'],
     'flowtype/use-flow-type': 'warn',
+    'flowtype/no-duplicate-type-union-intersection-members': 'error',
   },
 
   settings: {
