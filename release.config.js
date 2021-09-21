@@ -59,7 +59,12 @@ const localConfig = {
   ],
   repositoryUrl: 'git@github.com:nugit/eslint-config-nugit.git',
   plugins: [
-    '@semantic-release/commit-analyzer',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        preset: 'conventionalcommits',
+      },
+    ],
     '@semantic-release/npm',
     [
       '@semantic-release/exec',
