@@ -5,6 +5,5 @@ module.exports = {
   rules: {
     'footer-leading-blank': [2, 'always'],
     'body-leading-blank': [2, 'always'],
-    'subject-exclamation-mark': [2, 'never'],
   },
 };
