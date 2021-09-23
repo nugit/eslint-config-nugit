@@ -1,8 +1,16 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@babel/preset-env', '@babel/preset-flow', '@babel/preset-react'],
+    },
+  },
 
   plugins: [
     'flowtype',
+    'fb-flow',
   ],
 
   // View link below for flow rules documentation
@@ -46,6 +54,11 @@ module.exports = {
     'flowtype/type-import-style': ['off', 'declaration'],
     'flowtype/union-intersection-spacing': ['error', 'always'],
     'flowtype/use-flow-type': 'warn',
+    'flowtype/no-duplicate-type-union-intersection-members': 'error',
+    'flowtype/sort-type-union-intersection-members': 'error',
+    'flowtype/enforce-line-break': 'error',
+    'flowtype/quotes': ['error', 'single'],
+    'fb-flow/use-indexed-access-type': 'error',
   },
 
   settings: {

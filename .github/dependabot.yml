@@ -1,0 +1,38 @@
+version: 2
+
+registries:
+  npm-npmjs:
+    type: npm-registry
+    url: https://registry.npmjs.org
+    token: ${{ secrets.NPM_TOKEN }}
+
+updates:
+# root
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "22:00"
+    allow:
+      - dependency-type: "direct"
+    reviewers:
+      - team-engineering-x
+    target-branch: "develop"
+    registries:
+      - npm-npmjs
+    commit-message:
+      prefix: "fix:"
+      prefix-development: "chore:"
+    versioning-strategy: increase-if-necessary
+
+# actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "22:00"
+    commit-message:
+      prefix: "chore:"
+    reviewers:
+      - team-engineering-x
+    target-branch: "develop"
