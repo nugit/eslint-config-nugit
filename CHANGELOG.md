@@ -1,3 +1,10 @@
+## [2.0.1-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v2.0.1-beta.1...v2.0.1-beta.2) (2021-10-08)
+
+
+### Bug Fixes
+
+* disable import/no-cycle due to poor performances ([2ec7647](https://github.com/nugit/eslint-config-nugit/commit/2ec764746daf4943144c2fce79d6442039b0c257))
+
 ## [2.0.1-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.0...v2.0.1-beta.1) (2021-10-06)
 
 
