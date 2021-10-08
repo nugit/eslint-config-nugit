@@ -25,7 +25,7 @@ const mainConfig = {
         assets: ['CHANGELOG.md'],
         message:
           // eslint-disable-next-line no-template-curly-in-string
-          'chore(release): ${nextRelease.version} [skip ci]',
+          'chore(release): ${nextRelease.version}',
       },
     ],
     '@semantic-release/github',
