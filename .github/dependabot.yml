@@ -11,7 +11,8 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
       time: "22:00"
     allow:
       - dependency-type: "direct"
@@ -29,7 +30,8 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
       time: "22:00"
     commit-message:
       prefix: "chore:"
