@@ -3,19 +3,28 @@
 
 name: Check
 
-on: 
+on:
   push:
-    branches-ignore:
-      - dependabot/**
+    branches:
+      - "master"
+      - "develop"
+      - "onprem-master"
+  pull_request:
 
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - if: ${{ github.actor == 'dependabot[bot]' }}
+        run: echo "Skipping - Will be tested in dependabot-merge"
       - uses: actions/checkout@v2.3.4
+        if: ${{ github.actor != 'dependabot[bot]' }}
       - uses: actions/setup-node@v2.4.1
+        if: ${{ github.actor != 'dependabot[bot]' }}
         with:
           node-version: '14'
           cache: 'yarn'
       - run: yarn install
+        if: ${{ github.actor != 'dependabot[bot]' }}
       - run: yarn lint
+        if: ${{ github.actor != 'dependabot[bot]' }}
