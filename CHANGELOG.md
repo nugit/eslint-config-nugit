@@ -1,3 +1,10 @@
+## [2.0.2-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.1...v2.0.2-beta.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.14.5 to 7.16.0 ([1ad9880](https://github.com/nugit/eslint-config-nugit/commit/1ad988074a6383c01447a47591d3cad477e1e79d))
+
 ## [2.0.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.0...v2.0.1) (2021-10-08)
 
 
