@@ -3,7 +3,7 @@ name: dependabot-merge
 on:
   workflow_run:
     workflows: ["dependabot-check"]
-    types: 
+    types:
       - completed
 
 # See https://github.com/dependabot/dependabot-core/issues/3253#issuecomment-852541544
