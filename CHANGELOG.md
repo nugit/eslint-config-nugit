@@ -1,3 +1,10 @@
+## [2.0.2-beta.3](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2-beta.2...v2.0.2-beta.3) (2021-12-09)
+
+
+### Bug Fixes
+
+* update dependencies ([9c335f3](https://github.com/nugit/eslint-config-nugit/commit/9c335f38632f033ff5cfe47fa3f4b7e904f21bd1))
+
 ## [2.0.2-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2-beta.1...v2.0.2-beta.2) (2021-11-01)
 
 
