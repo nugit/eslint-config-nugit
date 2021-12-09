@@ -3,7 +3,7 @@ name: dependabot-merge
 on:
   workflow_run:
     workflows: ["dependabot-check"]
-    types: 
+    types:
       - completed
 
 # See https://github.com/dependabot/dependabot-core/issues/3253#issuecomment-852541544
@@ -14,10 +14,10 @@ jobs:
     if: ${{ (github.event.workflow_run.conclusion == 'success') && (github.event.sender.login == 'dependabot[bot]') }}
     steps:
       - uses: haya14busa/action-workflow_run-status@v1
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.4.0
         with:
           ref: ${{ github.event.workflow_run.head_branch }}
-      - uses: actions/setup-node@v2.4.1
+      - uses: actions/setup-node@v2.5.0
         with:
           node-version: '14'
           cache: 'yarn'
@@ -29,7 +29,7 @@ jobs:
     needs: check
     steps:
       - uses: haya14busa/action-workflow_run-status@v1
-      - uses: fastify/github-action-merge-dependabot@v2.5.0
+      - uses: fastify/github-action-merge-dependabot@v2.7.1
         with:
           target: minor
           merge-method: merge

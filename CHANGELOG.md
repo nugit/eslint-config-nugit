@@ -1,3 +1,24 @@
+## [2.0.2-beta.3](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2-beta.2...v2.0.2-beta.3) (2021-12-09)
+
+
+### Bug Fixes
+
+* update dependencies ([9c335f3](https://github.com/nugit/eslint-config-nugit/commit/9c335f38632f033ff5cfe47fa3f4b7e904f21bd1))
+
+## [2.0.2-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2-beta.1...v2.0.2-beta.2) (2021-11-01)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.15.8 to 7.16.0 ([af52c77](https://github.com/nugit/eslint-config-nugit/commit/af52c7793f1a1a0a854ab7a5fa1b2f339625b642))
+
+## [2.0.2-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.1...v2.0.2-beta.1) (2021-11-01)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.14.5 to 7.16.0 ([1ad9880](https://github.com/nugit/eslint-config-nugit/commit/1ad988074a6383c01447a47591d3cad477e1e79d))
+
 ## [2.0.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.0...v2.0.1) (2021-10-08)
 
 
