@@ -22,14 +22,13 @@ const mainConfig = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md'],
+        assets: ['CHANGELOG.md', 'package.json'],
         message:
           // eslint-disable-next-line no-template-curly-in-string
           'chore(release): ${nextRelease.version}',
       },
     ],
     '@semantic-release/github',
-    '@semantic-release/exec',
     [
       'semantic-release-slack-bot',
       {
@@ -66,12 +65,6 @@ const localConfig = {
       },
     ],
     '@semantic-release/npm',
-    [
-      '@semantic-release/exec',
-      {
-        publishCmd: 'git checkout -- package.json',
-      },
-    ],
   ],
 };
 
