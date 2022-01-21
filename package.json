@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/nugit/eslint-config-nugit",
   "engines": {
-    "node": ">=14.17"
+    "node": ">=12"
   },
   "devDependencies": {
     "@babel/core": "^7.16.10",
