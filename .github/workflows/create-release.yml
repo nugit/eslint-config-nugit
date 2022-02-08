@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
-      - uses: nugit/actions-pr-changelog/createReleaseAction@v1.2.5
+      - uses: nugit/actions-pr-changelog/createReleaseAction@v1.2.6
         with:
           token: ${{ secrets.GH_TOKEN }}
           head: develop

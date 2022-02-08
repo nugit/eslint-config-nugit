@@ -17,6 +17,9 @@ updates:
       prefix: "fix:"
       prefix-development: "chore:"
     versioning-strategy: increase-if-necessary
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
 # github actions
   - package-ecosystem: "github-actions"
