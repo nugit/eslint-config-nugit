@@ -1,3 +1,12 @@
+## [2.0.3](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2...v2.0.3) (2022-02-08)
+
+
+### Bug Fixes
+
+* fix security vulnerabilities ([1dbd75b](https://github.com/nugit/eslint-config-nugit/commit/1dbd75b09d5dcb964c91a46f5ed9c8a5ae93b42f))
+* run `npx yarn-minify` ([cbce3ca](https://github.com/nugit/eslint-config-nugit/commit/cbce3ca2a46b4ae111cfa9c230bf5cb546bdc211))
+* upgrade minor dependencies ([2321064](https://github.com/nugit/eslint-config-nugit/commit/2321064db5676d4426ac8c764faddb8001d7a1a7))
+
 ## [2.0.3-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.2...v2.0.3-beta.1) (2022-01-21)
 
 
