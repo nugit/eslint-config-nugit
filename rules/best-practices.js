@@ -137,6 +137,9 @@ module.exports = {
     // disallow creation of functions within loops
     'no-loop-func': 'error',
 
+    // https://eslint.org/docs/rules/no-loss-of-precision
+    'no-loss-of-precision': 'error',
+
     // disallow magic numbers
     // https://eslint.org/docs/rules/no-magic-numbers
     'no-magic-numbers': ['off', {
@@ -162,6 +165,9 @@ module.exports = {
 
     // disallows creating new instances of String, Number, and Boolean
     'no-new-wrappers': 'error',
+
+    // https://eslint.org/docs/rules/no-nonoctal-decimal-escape
+    'no-nonoctal-decimal-escape': 'error',
 
     // disallow use of (old style) octal literals
     'no-octal': 'error',
@@ -265,6 +271,9 @@ module.exports = {
     // https://eslint.org/docs/rules/no-unmodified-loop-condition
     'no-unmodified-loop-condition': 'off',
 
+    // https://eslint.org/docs/rules/no-unsafe-optional-chaining
+    'no-unsafe-optional-chaining': 'error',
+
     // disallow usage of expressions in statement position
     'no-unused-expressions': ['error', {
       allowShortCircuit: false,
@@ -275,6 +284,9 @@ module.exports = {
     // disallow unused labels
     // https://eslint.org/docs/rules/no-unused-labels
     'no-unused-labels': 'error',
+
+    // https://eslint.org/docs/rules/no-useless-backreference
+    'no-useless-backreference': 'error',
 
     // disallow unnecessary .call() and .apply()
     'no-useless-call': 'off',
