@@ -16,11 +16,11 @@ jobs:
       - uses: actions/setup-node@v2.5.1
         with:
           node-version: '14'
-          cache: 'yarn'
+          cache: 'npm'
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - run: yarn install
+      - run: npm ci
       - name: publish
-        run: yarn deploy:client
+        run: npm run deploy:client
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

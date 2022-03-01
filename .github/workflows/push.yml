@@ -22,8 +22,8 @@ jobs:
         if: ${{ github.actor != 'dependabot[bot]' }}
         with:
           node-version: '14'
-          cache: 'yarn'
-      - run: yarn install
+          cache: 'npm'
+      - run: npm ci
         if: ${{ github.actor != 'dependabot[bot]' }}
-      - run: yarn lint
+      - run: npm run lint
         if: ${{ github.actor != 'dependabot[bot]' }}

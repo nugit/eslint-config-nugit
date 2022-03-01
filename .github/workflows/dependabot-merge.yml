@@ -20,10 +20,10 @@ jobs:
       - uses: actions/setup-node@v2.5.1
         with:
           node-version: '14'
-          cache: 'yarn'
+          cache: 'npm'
       - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - run: yarn install
-      - run: yarn lint
+      - run: npm ci
+      - run: npm run lint
   auto-merge:
     runs-on: ubuntu-latest
     needs: check
