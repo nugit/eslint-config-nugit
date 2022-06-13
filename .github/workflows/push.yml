@@ -18,7 +18,7 @@ jobs:
         run: echo "Skipping - Will be tested in dependabot-merge"
       - uses: actions/checkout@v2.4.0
         if: ${{ github.actor != 'dependabot[bot]' }}
-      - uses: actions/setup-node@v2.5.1
+      - uses: actions/setup-node@v3.3.0
         if: ${{ github.actor != 'dependabot[bot]' }}
         with:
           node-version: '14'
