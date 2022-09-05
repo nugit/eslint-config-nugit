@@ -29,7 +29,7 @@ jobs:
     needs: check
     steps:
       - uses: haya14busa/action-workflow_run-status@v1
-      - uses: fastify/github-action-merge-dependabot@v2.7.1
+      - uses: fastify/github-action-merge-dependabot@v3.3.0
         with:
           target: minor
           merge-method: merge
