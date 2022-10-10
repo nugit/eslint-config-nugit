@@ -10,7 +10,7 @@ jobs:
   install: # Runs install once before everything to create & save cache
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3.1.0
         with:
           token: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v2.5.1
