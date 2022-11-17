@@ -8,11 +8,11 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
-      - uses: nugit/actions-pr-changelog/createReleaseAction@v1.2.6
+      - uses: actions/checkout@v3
+      - uses: nugit/actions-pr-changelog/createReleaseAction@v2.1.1
         with:
           token: ${{ secrets.GH_TOKEN }}
           head: develop
           base: master
           title: Next Release
-          reviewers: 'moroine,limtingzhi,tuannugit'
+          reviewers: 'moroine,limtingzhi'

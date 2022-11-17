@@ -6,4 +6,4 @@ if [[ -n $HUSKY_BYPASS ]]; then
   exit 0;
 fi
 
-yarn commitlint --config ./config/commitlint.config.js --edit $1
+npx commitlint --config ./config/commitlint.config.js --edit $1

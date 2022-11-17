@@ -7,21 +7,6 @@ on:
       - develop
 
 jobs:
-  install: # Runs install once before everything to create & save cache
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.4.0
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-      - uses: actions/setup-node@v2.5.1
-        with:
-          node-version: '14'
-          cache: 'yarn'
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-      - run: yarn install
-      - name: publish
-        run: yarn deploy:client
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+  deploy:
+    uses: ./.github/workflows/deploy-client.yml
+    secrets: inherit

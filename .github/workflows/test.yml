@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  workflow_call:
+    secrets:
+      NPM_TOKEN:
+        required: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    services:
+      redis-server:
+        image: redis
+        ports:
+          - 6379:6379
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint
