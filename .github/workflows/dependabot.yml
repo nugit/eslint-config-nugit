@@ -1,12 +1,15 @@
-name: dependabot-check
+name: dependabot
 
 on:
   pull_request:
 
-# See https://github.com/dependabot/dependabot-core/issues/3253#issuecomment-852541544
 jobs:
-  check-dependabot:
+  auto-merge:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - run: echo "PR created by Dependabot"
+      - uses: fastify/github-action-merge-dependabot@v3
+        with:
+          target: minor
+          merge-method: merge
+          use-github-auto-merge: true
+          github-token: ${{ secrets.GITHUB_TOKEN }}
