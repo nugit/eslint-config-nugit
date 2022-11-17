@@ -12,4 +12,4 @@ jobs:
           target: minor
           merge-method: merge
           use-github-auto-merge: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_TOKEN }}
