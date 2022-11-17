@@ -9,8 +9,16 @@ on:
       - "master"
       - "develop"
   pull_request:
+  workflow_run:
+    workflows:
+      - "dependabot"
+    branches: [dependabot/**]
+    types:
+      - completed
 
 jobs:
   check:
     uses: ./.github/workflows/test.yml
     secrets: inherit
+    with:
+      event_name: ${{ github.event_name }}
