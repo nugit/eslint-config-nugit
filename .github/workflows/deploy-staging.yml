@@ -10,3 +10,5 @@ jobs:
   deploy:
     uses: ./.github/workflows/deploy-client.yml
     secrets: inherit
+    with:
+      event_name: ${{ github.event_name }}

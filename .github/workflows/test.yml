@@ -2,6 +2,10 @@ name: Test
 
 on:
   workflow_call:
+    inputs:
+      event_name:
+        required: true
+        type: string
     secrets:
       NPM_TOKEN:
         required: true
@@ -9,12 +13,11 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
-    services:
-      redis-server:
-        image: redis
-        ports:
-          - 6379:6379
     steps:
+      - if: ${{ inputs.event_name == 'workflow_run' }}
+        uses: nugit/action-workflow_run-status@v1.1.0-beta.2
+        with:
+          job_id: 'check / check'
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
