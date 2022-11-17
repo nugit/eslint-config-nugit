@@ -23,6 +23,6 @@ jobs:
     permissions:
       pull-requests: write
     needs: auto-merge
-    if: contains(github.ref, "dependabot")
+    if: contains(github.ref, 'dependabot')
     steps:
       - uses: hmarr/auto-approve-action@v3
