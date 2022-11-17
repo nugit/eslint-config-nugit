@@ -1,3 +1,5 @@
+# [3.0.0-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.4-beta.6...v3.0.0-beta.1) (2022-11-17)
+
 ## [2.0.4-beta.6](https://github.com/nugit/eslint-config-nugit/compare/v2.0.4-beta.5...v2.0.4-beta.6) (2022-05-30)
 
 
