@@ -6,10 +6,14 @@ on:
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+      contents: write
+
     steps:
       - uses: fastify/github-action-merge-dependabot@v3
         with:
           target: minor
           merge-method: merge
           use-github-auto-merge: true
-          github-token: ${{ secrets.GH_TOKEN }}
