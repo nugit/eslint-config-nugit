@@ -17,3 +17,12 @@ jobs:
           target: minor
           merge-method: merge
           use-github-auto-merge: true
+
+  auto-approve:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    needs: auto-merge
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: hmarr/auto-approve-action@v3
