@@ -28,7 +28,7 @@ jobs:
         uses: fkirc/skip-duplicate-actions@v5
         with:
           # Skip the build if the action is triggered twice (push & pull-request events)
-          concurrent_skipping: 'same_content'
+          concurrent_skipping: 'same_content_newer'
 
   check:
     needs: pre_job
