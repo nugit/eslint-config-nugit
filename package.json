@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nugit",
-  "version": "3.0.0-beta.1",
+  "version": "3.0.0-beta.3",
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -51,7 +51,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
-    "semantic-release": "^18.0.1",
+    "semantic-release": "^19.0.5",
     "semantic-release-slack-bot": "^3.4.1"
   },
   "peerDependencies": {

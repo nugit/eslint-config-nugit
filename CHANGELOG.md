@@ -1,3 +1,19 @@
+# [3.0.0-beta.3](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.2...v3.0.0-beta.3) (2022-11-20)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.16.11 to 7.20.2 ([b4c4ff2](https://github.com/nugit/eslint-config-nugit/commit/b4c4ff2c6df3f9deb22bcc36186148e955b0b705))
+* commit status ([b034938](https://github.com/nugit/eslint-config-nugit/commit/b034938737d689fee00fd1d0fbd41febc9545cc7))
+* prevent duplicated workflow ([207b334](https://github.com/nugit/eslint-config-nugit/commit/207b3340d859845747cc798034403cbd58db9665))
+
+# [3.0.0-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.1...v3.0.0-beta.2) (2022-11-17)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.17.12 to 7.18.6 ([eb04638](https://github.com/nugit/eslint-config-nugit/commit/eb04638c5d22918d23e68a0aa806ddd25233af13))
+
 # [3.0.0-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v2.0.4-beta.6...v3.0.0-beta.1) (2022-11-17)
 
 ## [2.0.4-beta.6](https://github.com/nugit/eslint-config-nugit/compare/v2.0.4-beta.5...v2.0.4-beta.6) (2022-05-30)
