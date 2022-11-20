@@ -17,6 +17,7 @@ jobs:
       contents: read
       statuses: write
     steps:
+      - uses: actions/checkout@v3
       - if: ${{ inputs.event_name == 'workflow_run' }}
         name: Set commit status as pending
         uses: myrotvorets/set-commit-status-action@master
@@ -24,7 +25,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: pending
           context: Publish NPM package
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
