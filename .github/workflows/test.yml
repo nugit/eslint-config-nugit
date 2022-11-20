@@ -13,11 +13,17 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
     steps:
       - if: ${{ inputs.event_name == 'workflow_run' }}
-        uses: nugit/action-workflow_run-status@v1.1.0-beta.2
+        name: Set commit status as pending
+        uses: myrotvorets/set-commit-status-action@master
         with:
-          job_id: 'check / check'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: pending
+          context: Publish NPM package
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
@@ -25,3 +31,10 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint
+      - if: ${{ inputs.event_name == 'workflow_run' }}
+        name: Set commit status
+        uses: myrotvorets/set-commit-status-action@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          context: Publish NPM package
