@@ -26,7 +26,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: pending
-          context: Publish NPM package
+          context: check / check
           sha: ${{ steps.git-sha.outputs.sha }}
       - uses: actions/setup-node@v3
         with:
@@ -40,5 +40,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: ${{ job.status }}
-          context: Publish NPM package
+          context: check / check
           sha: ${{ steps.git-sha.outputs.sha }}
