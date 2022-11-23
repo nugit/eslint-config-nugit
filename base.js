@@ -1,13 +1,7 @@
 module.exports = {
   extends: [
-    './rules/best-practices',
-    './rules/errors',
-    './rules/node',
-    './rules/style',
-    './rules/variables',
-    './rules/es6',
+    './rules/core',
     './rules/imports',
-    './rules/strict',
     './rules/flow.js',
     './rules/eslint-comments',
   ].map(require.resolve),
