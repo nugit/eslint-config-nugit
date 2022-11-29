@@ -5,15 +5,14 @@ name: Check
 
 on:
   push:
-  workflow_run:
-    workflows:
-      - "dependabot"
+  pull_request_target:
     branches: [dependabot/**]
     types:
-      - completed
+      - closed
 
 jobs:
   check:
+    if: (github.event_name != 'pull_request_target') || (github.event.pull_request.merged == true)
     uses: ./.github/workflows/test.yml
     secrets: inherit
     with:
