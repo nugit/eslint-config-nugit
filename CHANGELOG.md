@@ -1,3 +1,10 @@
+# [3.0.0-beta.5](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.4...v3.0.0-beta.5) (2022-11-29)
+
+
+### Bug Fixes
+
+* dependabot action ([b626192](https://github.com/nugit/eslint-config-nugit/commit/b626192be522bf65a66b4fc99789557f136cdef8))
+
 # [3.0.0-beta.4](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.3...v3.0.0-beta.4) (2022-11-20)
 
 
