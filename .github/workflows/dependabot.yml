@@ -17,6 +17,7 @@ jobs:
           target: minor
           merge-method: merge
           use-github-auto-merge: true
+          github-token: ${{ secrets.GH_TOKEN }}
 
   auto-approve:
     runs-on: ubuntu-latest
