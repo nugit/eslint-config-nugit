@@ -1,3 +1,10 @@
+# [3.0.0-beta.6](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.5...v3.0.0-beta.6) (2022-12-05)
+
+
+### Bug Fixes
+
+* try with team-engineering-x token ([752c01a](https://github.com/nugit/eslint-config-nugit/commit/752c01afceed047efaa56ff6bbbec6315b2fdeac))
+
 # [3.0.0-beta.5](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.4...v3.0.0-beta.5) (2022-11-29)
 
 
