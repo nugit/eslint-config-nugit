@@ -1,6 +1,5 @@
 module.exports = {
   extends: [
-    './rules/node',
     './rules/plugins/imports',
     './rules/plugins/flow',
     // './rules/plugins/eslint-comments',
