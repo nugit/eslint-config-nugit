@@ -22,7 +22,7 @@ module.exports = {
     'ft-flow/define-flow-type': ['warn'],
     'ft-flow/delimiter-dangle': ['error', 'always-multiline', 'always-multiline', 'always-multiline'],
     'ft-flow/enforce-line-break': ['error'],
-    'ft-flow/enforce-suppression-code': ['error'],
+    'ft-flow/enforce-suppression-code': ['off'],
     'ft-flow/generic-spacing': ['error', 'never'],
     'ft-flow/newline-after-flow-annotation': ['error', 'always'],
     'ft-flow/no-dupe-keys': ['error'],
