@@ -1,5 +1,8 @@
 module.exports = {
   extends: [
+    './rules/core/formatting',
+    './rules/core/problems',
+    './rules/core/suggestions',
     './rules/plugins/imports',
     './rules/plugins/flow',
     // './rules/plugins/eslint-comments',

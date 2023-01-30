@@ -70,7 +70,7 @@ module.exports = {
       optionalDependencies: false,
     }],
     'import/no-mutable-exports': 'error',
-    'import/no-unused-modules': 'error',
+    'import/no-unused-modules': 'off',
 
     // Module systems:
     'import/unambiguous': 'off',
@@ -116,7 +116,7 @@ module.exports = {
       },
     ],
     'import/newline-after-import': 'error',
-    'import/prefer-default-export': 'error',
+    'import/prefer-default-export': 'off',
     'import/max-dependencies': 'off',
     'import/no-unassigned-import': 'error',
     'import/no-named-default': 'error',
