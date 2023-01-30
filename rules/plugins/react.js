@@ -47,23 +47,17 @@ module.exports = {
     'react/iframe-missing-sandbox': 'off',
     'react/jsx-boolean-value': ['error', 'never', { always: [] }],
     'react/jsx-child-element-spacing': 'off',
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    'react/jsx-closing-tag-location': 'error',
+    'react/jsx-closing-bracket-location': 'off',
+    'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-brace-presence': [
       'error',
       { props: 'never', children: 'never' },
     ],
-    'react/jsx-curly-newline': [
-      'error',
-      {
-        multiline: 'consistent',
-        singleline: 'consistent',
-      },
-    ],
-    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
-    'react/jsx-equals-spacing': ['error', 'never'],
+    'react/jsx-curly-newline': 'off',
+    'react/jsx-curly-spacing': 'off',
+    'react/jsx-equals-spacing': 'off',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+    'react/jsx-first-prop-new-line': 'off',
     'react/jsx-fragments': ['error', 'syntax'],
     'react/jsx-handler-names': [
       'off',
@@ -72,18 +66,11 @@ module.exports = {
         eventHandlerPropPrefix: 'on',
       },
     ],
-    'react/jsx-indent': [
-      'error',
-      2,
-      { indentLogicalExpressions: true, checkAttributes: true },
-    ],
-    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-indent': 'off',
+    'react/jsx-indent-props': 'off',
     'react/jsx-key': ['error', { checkFragmentShorthand: true }],
     'react/jsx-max-depth': 'off',
-    'react/jsx-max-props-per-line': [
-      'error',
-      { maximum: 1, when: 'multiline' },
-    ],
+    'react/jsx-max-props-per-line': 'off',
     'react/jsx-newline': 'off',
     'react/jsx-no-bind': [
       'error',
@@ -104,7 +91,7 @@ module.exports = {
     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
+    'react/jsx-one-expression-per-line': 'off',
     'react/jsx-pascal-case': [
       'error',
       {
@@ -112,7 +99,7 @@ module.exports = {
         ignore: [],
       },
     ],
-    'react/jsx-props-no-multi-spaces': 'error',
+    'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-props-no-spreading': [
       'off',
       {
@@ -139,30 +126,10 @@ module.exports = {
       },
     ],
     'react/jsx-space-before-closing': ['off', 'always'],
-    'react/jsx-tag-spacing': [
-      'error',
-      {
-        closingSlash: 'never',
-        beforeSelfClosing: 'always',
-        afterOpening: 'never',
-        beforeClosing: 'never',
-      },
-    ],
+    'react/jsx-tag-spacing': 'off',
     'react/jsx-uses-react': ['error'],
     'react/jsx-uses-vars': 'error',
-    'react/jsx-wrap-multilines': [
-      'error',
-      {
-        declaration: 'parens-new-line',
-        assignment: 'parens-new-line',
-        return: 'parens-new-line',
-        arrow: 'parens-new-line',
-        condition: 'parens-new-line',
-        logical: 'parens-new-line',
-        prop: 'parens-new-line',
-      },
-    ],
-
+    'react/jsx-wrap-multilines': 'off',
     'react/no-access-state-in-setstate': 'error',
     'react/no-adjacent-inline-elements': 'off',
     'react/no-array-index-key': 'error',
