@@ -1,5 +1,8 @@
 module.exports = {
   extends: [
+    './rules/core/formatting',
+    './rules/core/problems',
+    './rules/core/suggestions',
     './rules/node',
     './rules/plugins/imports',
     './rules/plugins/flow',
