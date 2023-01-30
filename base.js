@@ -5,7 +5,6 @@ module.exports = {
     './rules/core/suggestions',
     './rules/plugins/imports',
     './rules/plugins/flow',
-    // './rules/plugins/eslint-comments',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 'latest',
@@ -15,6 +14,7 @@ module.exports = {
     'shared-node-browser': true,
   },
   rules: {},
+  reportUnusedDisableDirectives: true,
   overrides: [
     {
       files: [

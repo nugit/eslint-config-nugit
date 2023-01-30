@@ -4,7 +4,7 @@
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --report-unused-disable-directives .",
+    "lint": "eslint .",
     "deploy:client": "semantic-release --deps.bump=inherit",
     "deploy:client:local": "CI=true LOCAL_RELEASE=true semantic-release --deps.bump=inherit",
     "prepare": "husky install $PWD/.husky"
