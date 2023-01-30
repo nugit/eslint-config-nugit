@@ -4,23 +4,34 @@ module.exports = {
   parserOptions: {
     requireConfigFile: false,
     babelOptions: {
-      presets: ['@babel/preset-env', '@babel/preset-flow', '@babel/preset-react'],
+      presets: [
+        '@babel/preset-env',
+        '@babel/preset-flow',
+        '@babel/preset-react',
+      ],
     },
   },
 
-  plugins: [
-    'ft-flow',
-  ],
+  plugins: ['ft-flow'],
 
   // View link below for flow rules documentation
   // https://github.com/flow-typed/eslint-plugin-ft-flow#rules
   rules: {
     'ft-flow/array-style-complex-type': ['error', 'verbose'],
     'ft-flow/array-style-simple-type': ['error', 'shorthand'],
-    'ft-flow/arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
+    'ft-flow/arrow-parens': [
+      'error',
+      'as-needed',
+      { requireForBlockBody: true },
+    ],
     'ft-flow/boolean-style': ['error', 'boolean'],
     'ft-flow/define-flow-type': ['warn'],
-    'ft-flow/delimiter-dangle': ['error', 'always-multiline', 'always-multiline', 'always-multiline'],
+    'ft-flow/delimiter-dangle': [
+      'error',
+      'always-multiline',
+      'always-multiline',
+      'always-multiline',
+    ],
     'ft-flow/enforce-line-break': ['error'],
     'ft-flow/enforce-suppression-code': ['off'],
     'ft-flow/generic-spacing': ['error', 'never'],

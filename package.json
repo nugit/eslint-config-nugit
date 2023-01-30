@@ -7,7 +7,9 @@
     "lint": "eslint .",
     "deploy:client": "semantic-release --deps.bump=inherit",
     "deploy:client:local": "CI=true LOCAL_RELEASE=true semantic-release --deps.bump=inherit",
-    "prepare": "husky install $PWD/.husky"
+    "prepare": "husky install",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --fix ."
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "husky": "^7.0.4",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.3",
     "semantic-release": "^19.0.5",
     "semantic-release-slack-bot": "^3.4.1"
   },
@@ -50,6 +54,7 @@
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.16.5",
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-ft-flow": "^2.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -61,5 +66,8 @@
     "@babel/preset-flow": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
     "confusing-browser-globals": "^1.0.11"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

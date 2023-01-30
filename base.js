@@ -1,11 +1,14 @@
 module.exports = {
   extends: [
-    './rules/core/formatting',
-    './rules/core/problems',
-    './rules/core/suggestions',
-    './rules/plugins/imports',
-    './rules/plugins/flow',
-  ].map(require.resolve),
+    ...[
+      './rules/core/formatting',
+      './rules/core/problems',
+      './rules/core/suggestions',
+      './rules/plugins/imports',
+      './rules/plugins/flow',
+    ].map(require.resolve),
+    'prettier',
+  ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -25,7 +28,7 @@ module.exports = {
         '**/*{.,_}{test,spec,stories,bench,fixture}.{js,jsx}', // tests where the extension or filename suffix denotes that it is a test
       ],
       env: {
-        'jest': true,
+        jest: true,
         'shared-node-browser': true,
       },
       rules: {

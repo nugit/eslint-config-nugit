@@ -38,9 +38,12 @@ module.exports = {
     'no-obj-calls': 'error',
     'no-promise-executor-return': 'off',
     'no-prototype-builtins': 'error',
-    'no-self-assign': ['error', {
-      props: true,
-    }],
+    'no-self-assign': [
+      'error',
+      {
+        props: true,
+      },
+    ],
     'no-self-compare': 'error',
     'no-setter-return': 'off',
     'no-sparse-arrays': 'error',
@@ -55,8 +58,14 @@ module.exports = {
     'no-unsafe-negation': 'error',
     'no-unsafe-optional-chaining': 'off',
     'no-unused-private-class-members': 'off',
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
-    'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+    'no-unused-vars': [
+      'error',
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: true },
+    ],
+    'no-use-before-define': [
+      'error',
+      { functions: true, classes: true, variables: true },
+    ],
     'no-useless-backreference': 'off',
     'require-atomic-updates': 'error',
     'use-isnan': 'error',
