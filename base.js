@@ -3,7 +3,6 @@ module.exports = {
     './rules/core/formatting',
     './rules/core/problems',
     './rules/core/suggestions',
-    './rules/node',
     './rules/plugins/imports',
     './rules/plugins/flow',
     // './rules/plugins/eslint-comments',
