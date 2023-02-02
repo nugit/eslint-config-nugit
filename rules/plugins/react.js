@@ -8,7 +8,6 @@ module.exports = {
   // https://github.com/jsx-eslint/eslint-plugin-react
   rules: {
     'jsx-quotes': ['error', 'prefer-double'],
-
     'react/boolean-prop-naming': ['off'],
     'react/button-has-type': [
       'error',
