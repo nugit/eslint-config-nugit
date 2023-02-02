@@ -1,3 +1,21 @@
+# [3.0.0-beta.7](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.6...v3.0.0-beta.7) (2023-02-02)
+
+
+### Bug Fixes
+
+* address PR comments ([6d83620](https://github.com/nugit/eslint-config-nugit/commit/6d83620bc26e296a5f40be760908b0d0ae19e4b1))
+
+
+### Features
+
+* upgrade eslint ([7267bb3](https://github.com/nugit/eslint-config-nugit/commit/7267bb397b0d6fbf1ca210604985ad8420832e97))
+
+
+### BREAKING CHANGES
+
+* disable eslint-pugin-comments
+* replace eslint-plugin-flowtype & eslint-plugin-fb-flow by eslint-plugin-ft-flow
+
 # [3.0.0-beta.6](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.5...v3.0.0-beta.6) (2022-12-05)
 
 
