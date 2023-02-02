@@ -6,10 +6,10 @@ module.exports = {
     './rules/style',
     './rules/variables',
     './rules/es6',
-    './rules/imports',
+    './rules/plugins/imports',
     './rules/strict',
-    './rules/flow.js',
-    './rules/eslint-comments',
+    './rules/plugins/flow',
+    // './rules/plugins/eslint-comments',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 'latest',
