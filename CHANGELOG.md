@@ -1,3 +1,24 @@
+# [3.0.0-beta.8](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.7...v3.0.0-beta.8) (2023-02-02)
+
+
+### Bug Fixes
+
+* address PR comments ([4d03203](https://github.com/nugit/eslint-config-nugit/commit/4d03203bc4db88fa8ab8d937a18c552ddf3a7910))
+
+
+### Features
+
+* remove deprecated rules ([5347d24](https://github.com/nugit/eslint-config-nugit/commit/5347d2405c7c4c618d91fce4cc1d7f4ee891761f))
+* use removeUnusedDirective ([e765ef7](https://github.com/nugit/eslint-config-nugit/commit/e765ef78f7716dcb885a1bc94144c792eb987995))
+
+
+### BREAKING CHANGES
+
+* remove global-require
+* remove no-buffer-constructor
+* remove no-new-require
+* remove no-path-concat
+
 # [3.0.0-beta.7](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.6...v3.0.0-beta.7) (2023-02-02)
 
 
