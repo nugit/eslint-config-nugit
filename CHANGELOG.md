@@ -1,3 +1,10 @@
+# [3.0.0-beta.10](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.9...v3.0.0-beta.10) (2023-04-03)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.18.6 to 7.21.4 ([eaccafc](https://github.com/nugit/eslint-config-nugit/commit/eaccafc164026efd7d6ae3127a2a95eb6e129a71))
+
 # [3.0.0-beta.9](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.8...v3.0.0-beta.9) (2023-04-03)
 
 
