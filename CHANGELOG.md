@@ -1,3 +1,10 @@
+# [3.0.0-beta.25](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.24...v3.0.0-beta.25) (2023-11-13)
+
+
+### Bug Fixes
+
+* bump @babel/preset-react from 7.22.15 to 7.23.3 ([62e3c77](https://github.com/nugit/eslint-config-nugit/commit/62e3c77c021b901bfe38f190228750d01540f8a7))
+
 # [3.0.0-beta.24](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.23...v3.0.0-beta.24) (2023-11-13)
 
 
