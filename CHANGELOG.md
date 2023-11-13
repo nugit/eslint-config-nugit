@@ -1,3 +1,10 @@
+# [3.0.0-beta.24](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.23...v3.0.0-beta.24) (2023-11-13)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.22.15 to 7.23.3 ([0cd2d63](https://github.com/nugit/eslint-config-nugit/commit/0cd2d6397e93a97190a2d4f87f809f02dc560e9d))
+
 # [3.0.0-beta.23](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.22...v3.0.0-beta.23) (2023-10-16)
 
 
