@@ -26,4 +26,4 @@ jobs:
     needs: auto-merge
     if: contains(github.head_ref, 'dependabot')
     steps:
-      - uses: hmarr/auto-approve-action@v3
+      - uses: hmarr/auto-approve-action@v4
