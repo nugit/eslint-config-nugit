@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nugit",
-  "version": "3.0.0-beta.33",
+  "version": "3.0.0-beta.34",
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
