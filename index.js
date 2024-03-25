@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
     './base',
-    './rules/react',
-    './rules/react-hooks',
-    './rules/react-a11y',
+    './rules/plugins/react',
+    './rules/plugins/react-hooks',
+    './rules/plugins/react-a11y',
   ].map(require.resolve),
   env: {
     'browser': true,

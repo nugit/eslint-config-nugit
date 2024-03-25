@@ -1,15 +1,10 @@
 module.exports = {
   extends: [
-    './rules/best-practices',
-    './rules/errors',
-    './rules/node',
-    './rules/style',
-    './rules/variables',
-    './rules/es6',
-    './rules/imports',
-    './rules/strict',
-    './rules/flow.js',
-    './rules/eslint-comments',
+    './rules/core/formatting',
+    './rules/core/problems',
+    './rules/core/suggestions',
+    './rules/plugins/imports',
+    './rules/plugins/flow',
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 'latest',
@@ -19,6 +14,7 @@ module.exports = {
     'shared-node-browser': true,
   },
   rules: {},
+  reportUnusedDisableDirectives: true,
   overrides: [
     {
       files: [
