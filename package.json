@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.24.3",
-    "@babel/preset-flow": "^7.24.0",
+    "@babel/preset-flow": "^7.24.1",
     "@babel/preset-react": "^7.24.1",
     "confusing-browser-globals": "^1.0.11"
   }
