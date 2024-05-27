@@ -1,3 +1,10 @@
+# [3.0.0-beta.42](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.41...v3.0.0-beta.42) (2024-05-27)
+
+
+### Reverts
+
+* Revert "chore: add back conditions to test only on branches and pull requests" ([205cbcb](https://github.com/nugit/eslint-config-nugit/commit/205cbcb618dfc7548b2cca935e33f02b3e0983c6))
+
 # [3.0.0-beta.41](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.40...v3.0.0-beta.41) (2024-05-27)
 
 
