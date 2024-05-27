@@ -2,10 +2,6 @@ name: Test
 
 on:
   workflow_call:
-    inputs:
-      event_name:
-        required: true
-        type: string
     secrets:
       NPM_TOKEN:
         required: true
@@ -18,27 +14,9 @@ jobs:
       statuses: write
     steps:
       - uses: actions/checkout@v4
-      - id: git-sha
-        run: echo 'sha=$(git rev-parse HEAD)' >> $GITHUB_OUTPUT
-      - if: ${{ inputs.event_name == 'pull_request_target' }}
-        name: Set commit status as pending
-        uses: myrotvorets/set-commit-status-action@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          status: pending
-          context: check / check
-          sha: ${{ steps.git-sha.outputs.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '16'
           cache: 'npm'
       - run: npm ci
       - run: npm run lint
-      - if: ${{ inputs.event_name == 'pull_request_target' }}
-        name: Set commit status
-        uses: myrotvorets/set-commit-status-action@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          status: ${{ job.status }}
-          context: check / check
-          sha: ${{ steps.git-sha.outputs.sha }}
