@@ -1,8 +1,9 @@
 name: Create Release
 
 on:
-  schedule:
-    - cron: '* * 1 * *'
+  push:
+    branches:
+      - 'develop'
 
 jobs:
   release:
