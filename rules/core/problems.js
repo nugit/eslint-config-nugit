@@ -38,9 +38,12 @@ module.exports = {
     'no-obj-calls': 'error',
     'no-promise-executor-return': 'off',
     'no-prototype-builtins': 'error',
-    'no-self-assign': ['error', {
-      props: true,
-    }],
+    'no-self-assign': [
+      'error',
+      {
+        props: true,
+      },
+    ],
     'no-self-compare': 'error',
     'no-setter-return': 'off',
     'no-sparse-arrays': 'error',
