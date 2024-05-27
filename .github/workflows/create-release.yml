@@ -16,4 +16,4 @@ jobs:
           head: develop
           base: master
           title: Next Release
-          reviewers: 'moroine,limtingzhi'
+          reviewers: 'limtingzhi'
