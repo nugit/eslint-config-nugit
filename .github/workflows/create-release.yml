@@ -1,8 +1,9 @@
 name: Create Release
 
 on:
-  schedule:
-    - cron: '* * 1 * *'
+  push:
+    branches:
+      - 'develop'
 
 jobs:
   release:
@@ -15,4 +16,4 @@ jobs:
           head: develop
           base: master
           title: Next Release
-          reviewers: 'moroine,limtingzhi'
+          reviewers: 'limtingzhi'

@@ -5,11 +5,12 @@ name: Check
 
 on:
   push:
+    branches:
+      - 'master'
+      - 'develop'
+  pull_request:
 
 jobs:
   check:
-    if: (github.event_name != 'pull_request_target') || (github.event.pull_request.merged == true)
     uses: ./.github/workflows/test.yml
     secrets: inherit
-    with:
-      event_name: ${{ github.event_name }}
