@@ -31,9 +31,9 @@
   },
   "homepage": "https://github.com/nugit/eslint-config-nugit",
   "engines": {
-    "node": ">=16.14.0",
+    "node": ">=20.13.0",
     "yarn": "please-use-npm",
-    "npm": ">= 8.0.0"
+    "npm": ">=10.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",

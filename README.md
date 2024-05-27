@@ -10,7 +10,7 @@ This package provides Nugit's JS .eslintrc as an extensible shared config.
 npm i eslint-config-nugit --save-dev
 ```
 
-> NOTE: NPM 8 is required otherwise you'll need to manually install peerDependencies. Peer dependencies change won't be considered as breaking change anymore.
+> NOTE: NPM 10 is required otherwise you'll need to manually install peerDependencies. Peer dependencies change won't be considered as breaking change anymore.
 
 ## Usage
 
