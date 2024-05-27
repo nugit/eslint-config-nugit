@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '16'
           cache: 'npm'
-      - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+      - run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > .npmrc
       - run: npm ci
       # https://github.com/dhoulb/multi-semantic-release#npm-v85-npm-err-notarget-no-matching-version-found-for
       - run: npm config set workspaces-update false

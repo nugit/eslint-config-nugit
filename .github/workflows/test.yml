@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: git-sha
-        run: echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        run: echo 'sha=$(git rev-parse HEAD)' >> $GITHUB_OUTPUT
       - if: ${{ inputs.event_name == 'pull_request_target' }}
         name: Set commit status as pending
         uses: myrotvorets/set-commit-status-action@master
