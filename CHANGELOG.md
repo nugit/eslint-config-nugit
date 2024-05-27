@@ -1,3 +1,74 @@
+# [3.0.0](https://github.com/nugit/eslint-config-nugit/compare/v2.0.3...v3.0.0) (2024-05-27)
+
+
+### Bug Fixes
+
+* address PR comments ([4d03203](https://github.com/nugit/eslint-config-nugit/commit/4d03203bc4db88fa8ab8d937a18c552ddf3a7910))
+* address PR comments ([6d83620](https://github.com/nugit/eslint-config-nugit/commit/6d83620bc26e296a5f40be760908b0d0ae19e4b1))
+* bump @babel/preset-env from 7.16.11 to 7.17.10 ([3af6683](https://github.com/nugit/eslint-config-nugit/commit/3af6683c6c4f0cb106cf848e1c40beb7bd60188b))
+* bump @babel/preset-env from 7.16.11 to 7.20.2 ([b4c4ff2](https://github.com/nugit/eslint-config-nugit/commit/b4c4ff2c6df3f9deb22bcc36186148e955b0b705))
+* bump @babel/preset-env from 7.17.10 to 7.17.12 ([83b5858](https://github.com/nugit/eslint-config-nugit/commit/83b58581f27be6373b4377790b63facca9311c27))
+* bump @babel/preset-env from 7.17.12 to 7.18.0 ([6c70c62](https://github.com/nugit/eslint-config-nugit/commit/6c70c626b84fce4c2b9d59d36c01672b60ee1565))
+* bump @babel/preset-env from 7.18.0 to 7.18.2 ([acadb2e](https://github.com/nugit/eslint-config-nugit/commit/acadb2ef6e105705ec783ead7e105d5fe6e34617))
+* bump @babel/preset-env from 7.20.2 to 7.21.4 ([e682bc8](https://github.com/nugit/eslint-config-nugit/commit/e682bc81140a98cb8fc988b56a730f212d755d77))
+* bump @babel/preset-env from 7.21.4 to 7.21.5 ([2cee9b3](https://github.com/nugit/eslint-config-nugit/commit/2cee9b335a5ed77f8bc8e5edd703949eac8cff7e))
+* bump @babel/preset-env from 7.21.5 to 7.22.4 ([5fe64bb](https://github.com/nugit/eslint-config-nugit/commit/5fe64bbc9fa5cecc7523e2b5177e602ee42a1947))
+* bump @babel/preset-env from 7.22.10 to 7.22.15 ([1e368e3](https://github.com/nugit/eslint-config-nugit/commit/1e368e308c08568c73833d696bae44f320959ef3))
+* bump @babel/preset-env from 7.22.15 to 7.22.20 ([38b22bf](https://github.com/nugit/eslint-config-nugit/commit/38b22bf4f99a63efaa0c9ddcd635267cf8afb903))
+* bump @babel/preset-env from 7.22.20 to 7.23.2 ([e4ba3c5](https://github.com/nugit/eslint-config-nugit/commit/e4ba3c5cb66b3a4920928ba93f3a5f5b4ac1087f))
+* bump @babel/preset-env from 7.22.4 to 7.22.7 ([d71867f](https://github.com/nugit/eslint-config-nugit/commit/d71867fa549e8f41e0bd604166a17bb707e556d5))
+* bump @babel/preset-env from 7.22.7 to 7.22.9 ([45c530e](https://github.com/nugit/eslint-config-nugit/commit/45c530e5e4ca4bd5aa086ab63553f16d3a3ec3fe))
+* bump @babel/preset-env from 7.22.9 to 7.22.10 ([22dd5aa](https://github.com/nugit/eslint-config-nugit/commit/22dd5aa01cd4e1c95e6e3f1af67a11889bbec6a1))
+* bump @babel/preset-env from 7.23.2 to 7.23.3 ([7653a6d](https://github.com/nugit/eslint-config-nugit/commit/7653a6da87ce36a699ddf5b97b1239f8d7c8c404))
+* bump @babel/preset-env from 7.23.3 to 7.23.5 ([fd47690](https://github.com/nugit/eslint-config-nugit/commit/fd4769096643e4725d22aed4ff1c8c8b1797b344))
+* bump @babel/preset-env from 7.23.5 to 7.23.6 ([8aef9a4](https://github.com/nugit/eslint-config-nugit/commit/8aef9a47bfc4ff29c7a5939b09f9c7b23571668b))
+* bump @babel/preset-env from 7.23.6 to 7.23.7 ([3a3d8b0](https://github.com/nugit/eslint-config-nugit/commit/3a3d8b0dc46ea275f3a818bbf8181c39bb837c6c))
+* bump @babel/preset-env from 7.23.7 to 7.23.8 ([4c08231](https://github.com/nugit/eslint-config-nugit/commit/4c0823193e5bd55f305cecb3022ea065f6722608))
+* bump @babel/preset-env from 7.23.8 to 7.23.9 ([c5f4628](https://github.com/nugit/eslint-config-nugit/commit/c5f4628bef5d33898008da878c708078a08d4629))
+* bump @babel/preset-env from 7.23.9 to 7.24.0 ([c5e68d8](https://github.com/nugit/eslint-config-nugit/commit/c5e68d85179b73c7b1b256ec71689f7828de4e93))
+* bump @babel/preset-env from 7.24.0 to 7.24.3 ([2a1c299](https://github.com/nugit/eslint-config-nugit/commit/2a1c299220989b937ad447e6b8157fd41ffc33a0))
+* bump @babel/preset-env from 7.24.3 to 7.24.4 ([e2cc01f](https://github.com/nugit/eslint-config-nugit/commit/e2cc01f4ae5887d8f55485afee9fc0ba8930a038))
+* bump @babel/preset-env from 7.24.4 to 7.24.5 ([2245797](https://github.com/nugit/eslint-config-nugit/commit/224579734703207c1f42101c14d0bd04aa22a70a))
+* bump @babel/preset-env from 7.24.5 to 7.24.6 ([5f2c277](https://github.com/nugit/eslint-config-nugit/commit/5f2c277a0edce14ff9c2cc3a2b95115b8fe63a20))
+* bump @babel/preset-flow from 7.16.7 to 7.17.12 ([2a38cbd](https://github.com/nugit/eslint-config-nugit/commit/2a38cbd44c53bf5186444cdbeec7f81c21c3c6f9))
+* bump @babel/preset-flow from 7.17.12 to 7.18.6 ([eb04638](https://github.com/nugit/eslint-config-nugit/commit/eb04638c5d22918d23e68a0aa806ddd25233af13))
+* bump @babel/preset-flow from 7.18.6 to 7.21.4 ([eaccafc](https://github.com/nugit/eslint-config-nugit/commit/eaccafc164026efd7d6ae3127a2a95eb6e129a71))
+* bump @babel/preset-flow from 7.21.4 to 7.22.5 ([6e384ff](https://github.com/nugit/eslint-config-nugit/commit/6e384ff356b03141dc506a560b42394a5c94312b))
+* bump @babel/preset-flow from 7.22.15 to 7.23.3 ([0cd2d63](https://github.com/nugit/eslint-config-nugit/commit/0cd2d6397e93a97190a2d4f87f809f02dc560e9d))
+* bump @babel/preset-flow from 7.22.5 to 7.22.15 ([dc6e92e](https://github.com/nugit/eslint-config-nugit/commit/dc6e92e58b3e17040bc5834fdcbb09d650b61d70))
+* bump @babel/preset-flow from 7.23.3 to 7.24.0 ([d38f0c8](https://github.com/nugit/eslint-config-nugit/commit/d38f0c8cb37c45e86df024c230c79e139fc6c724))
+* bump @babel/preset-flow from 7.24.0 to 7.24.1 ([d8aeca1](https://github.com/nugit/eslint-config-nugit/commit/d8aeca124a99469df60eedf8f4b26a4cab08b3c4))
+* bump @babel/preset-flow from 7.24.1 to 7.24.6 ([1cded60](https://github.com/nugit/eslint-config-nugit/commit/1cded609027c06a105295743b0f8e7f96ad915c4))
+* bump @babel/preset-react from 7.16.7 to 7.17.12 ([d4233e3](https://github.com/nugit/eslint-config-nugit/commit/d4233e36194045bacfb15f0777255ff48baf341f))
+* bump @babel/preset-react from 7.17.12 to 7.18.6 ([3588b13](https://github.com/nugit/eslint-config-nugit/commit/3588b1366bc270e71dde76d824415180720e48c8))
+* bump @babel/preset-react from 7.18.6 to 7.22.3 ([d869bf1](https://github.com/nugit/eslint-config-nugit/commit/d869bf119ea84fbaa6eeebd855b028c57c54ee93))
+* bump @babel/preset-react from 7.22.15 to 7.23.3 ([62e3c77](https://github.com/nugit/eslint-config-nugit/commit/62e3c77c021b901bfe38f190228750d01540f8a7))
+* bump @babel/preset-react from 7.22.3 to 7.22.5 ([46d9cb4](https://github.com/nugit/eslint-config-nugit/commit/46d9cb486f1032cf92443be2a94a25f1276931d4))
+* bump @babel/preset-react from 7.22.5 to 7.22.15 ([bf42899](https://github.com/nugit/eslint-config-nugit/commit/bf42899b16278412469194a015f87cd90dc0571a))
+* bump @babel/preset-react from 7.23.3 to 7.24.1 ([977056f](https://github.com/nugit/eslint-config-nugit/commit/977056fac19da954ca7a573b563529446f43493e))
+* bump @babel/preset-react from 7.24.1 to 7.24.6 ([ee0da1d](https://github.com/nugit/eslint-config-nugit/commit/ee0da1decac354a688e01d0dc8ad27258a0fd0e1))
+* commit status ([b034938](https://github.com/nugit/eslint-config-nugit/commit/b034938737d689fee00fd1d0fbd41febc9545cc7))
+* dependabot action ([b626192](https://github.com/nugit/eslint-config-nugit/commit/b626192be522bf65a66b4fc99789557f136cdef8))
+* prevent duplicated workflow ([207b334](https://github.com/nugit/eslint-config-nugit/commit/207b3340d859845747cc798034403cbd58db9665))
+* try with team-engineering-x token ([752c01a](https://github.com/nugit/eslint-config-nugit/commit/752c01afceed047efaa56ff6bbbec6315b2fdeac))
+
+
+### Features
+
+* remove deprecated rules ([5347d24](https://github.com/nugit/eslint-config-nugit/commit/5347d2405c7c4c618d91fce4cc1d7f4ee891761f))
+* upgrade eslint ([7267bb3](https://github.com/nugit/eslint-config-nugit/commit/7267bb397b0d6fbf1ca210604985ad8420832e97))
+* use removeUnusedDirective ([e765ef7](https://github.com/nugit/eslint-config-nugit/commit/e765ef78f7716dcb885a1bc94144c792eb987995))
+
+
+### BREAKING CHANGES
+
+* remove global-require
+* remove no-buffer-constructor
+* remove no-new-require
+* remove no-path-concat
+* disable eslint-pugin-comments
+* replace eslint-plugin-flowtype & eslint-plugin-fb-flow by eslint-plugin-ft-flow
+
 # [3.0.0-beta.42](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0-beta.41...v3.0.0-beta.42) (2024-05-27)
 
 
