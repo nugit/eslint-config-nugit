@@ -7,6 +7,7 @@ module.exports = {
   ].map(require.resolve),
   env: {
     'browser': true,
+    'es2023': true,
     'shared-node-browser': true,
   },
   rules: {},

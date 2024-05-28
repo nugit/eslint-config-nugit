@@ -11,6 +11,7 @@ module.exports = {
     sourceType: 'module',
   },
   env: {
+    'es2023': true,
     'shared-node-browser': true,
   },
   rules: {},
@@ -25,6 +26,7 @@ module.exports = {
         '**/*{.,_}{test,spec,stories,bench,fixture}.{js,jsx}', // tests where the extension or filename suffix denotes that it is a test
       ],
       env: {
+        'es2023': true,
         'jest': true,
         'shared-node-browser': true,
       },
