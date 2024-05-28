@@ -1,3 +1,10 @@
+# [4.0.0-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v4.0.0-beta.1...v4.0.0-beta.2) (2024-05-28)
+
+
+### Bug Fixes
+
+* fix eslint environment ([1cd30e4](https://github.com/nugit/eslint-config-nugit/commit/1cd30e46b284fb898e7c939d64d6a2c5ebe637a1))
+
 # [4.0.0-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0...v4.0.0-beta.1) (2024-05-27)
 
 
