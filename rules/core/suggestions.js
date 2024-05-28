@@ -4,15 +4,22 @@ const confusingBrowserGlobals = require('confusing-browser-globals');
 module.exports = {
   rules: {
     'accessor-pairs': 'off',
-    'arrow-body-style': ['error', 'as-needed', {
-      requireReturnForObjectLiteral: false,
-    }],
+    'arrow-body-style': [
+      'error',
+      'as-needed',
+      {
+        requireReturnForObjectLiteral: false,
+      },
+    ],
     'block-scoped-var': 'error',
     'camelcase': ['error', { properties: 'never', ignoreDestructuring: false }],
     'capitalized-comments': 'off',
-    'class-methods-use-this': ['error', {
-      exceptMethods: [],
-    }],
+    'class-methods-use-this': [
+      'error',
+      {
+        exceptMethods: [],
+      },
+    ],
     'complexity': 'off',
     'consistent-return': 'error',
     'consistent-this': 'off',
@@ -40,33 +47,38 @@ module.exports = {
     'max-params': 'off',
     'max-statements': 'off',
     'multiline-comment-style': 'off',
-    'new-cap': ['error', {
-      newIsCap: true,
-      newIsCapExceptions: [],
-      capIsNew: false,
-      capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
-    }],
+    'new-cap': [
+      'error',
+      {
+        newIsCap: true,
+        newIsCapExceptions: [],
+        capIsNew: false,
+        capIsNewExceptions: ['Immutable.Map', 'Immutable.Set', 'Immutable.List'],
+      },
+    ],
     'no-alert': 'warn',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
-    'no-confusing-arrow': ['error', {
-      allowParens: true,
-    }],
+    'no-confusing-arrow': [
+      'error',
+      {
+        allowParens: true,
+      },
+    ],
     'no-console': 'warn',
     'no-continue': 'error',
     'no-delete-var': 'error',
     'no-div-regex': 'off',
     'no-else-return': ['error', { allowElseIf: false }],
     'no-empty': 'error',
-    'no-empty-function': ['error', {
-      allow: [
-        'arrowFunctions',
-        'functions',
-        'methods',
-      ],
-    }],
+    'no-empty-function': [
+      'error',
+      {
+        allow: ['arrowFunctions', 'functions', 'methods'],
+      },
+    ],
     'no-empty-static-block': 'off',
     'no-eq-null': 'off',
     'no-eval': 'error',
@@ -89,7 +101,18 @@ module.exports = {
     'no-lonely-if': 'error',
     'no-loop-func': 'error',
     'no-magic-numbers': 'off',
-    'no-mixed-operators': ['error', { groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], allowSamePrecedence: true }],
+    'no-mixed-operators': [
+      'error',
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof'],
+        ],
+        allowSamePrecedence: true,
+      },
+    ],
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
     'no-negated-condition': 'off',
@@ -101,21 +124,24 @@ module.exports = {
     'no-nonoctal-decimal-escape': 'off',
     'no-octal': 'error',
     'no-octal-escape': 'error',
-    'no-param-reassign': ['error', {
-      props: true,
-      ignorePropertyModificationsFor: [
-        'acc', // for reduce accumulators
-        'accumulator', // for reduce accumulators
-        'e', // for e.returnvalue
-        'ctx', // for Koa routing
-        'req', // for Express requests
-        'request', // for Express requests
-        'res', // for Express responses
-        'response', // for Express responses
-        '$scope', // for Angular 1 scopes
-        'staticContext', // for ReactRouter context
-      ],
-    }],
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          'acc', // for reduce accumulators
+          'accumulator', // for reduce accumulators
+          'e', // for e.returnvalue
+          'ctx', // for Koa routing
+          'req', // for Express requests
+          'request', // for Express requests
+          'res', // for Express responses
+          'response', // for Express responses
+          '$scope', // for Angular 1 scopes
+          'staticContext', // for ReactRouter context
+        ],
+      },
+    ],
     'no-plusplus': 'error',
     'no-proto': 'error',
     'no-redeclare': 'error',
@@ -123,45 +149,57 @@ module.exports = {
     'no-restricted-exports': 'off',
     'no-restricted-globals': ['error', 'isFinite', 'isNaN'].concat(confusingBrowserGlobals),
     'no-restricted-imports': 'off',
-    'no-restricted-properties': ['error', {
-      object: 'arguments',
-      property: 'callee',
-      message: 'arguments.callee is deprecated',
-    }, {
-      object: 'global',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite instead',
-    }, {
-      object: 'self',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite instead',
-    }, {
-      object: 'window',
-      property: 'isFinite',
-      message: 'Please use Number.isFinite instead',
-    }, {
-      object: 'global',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN instead',
-    }, {
-      object: 'self',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN instead',
-    }, {
-      object: 'window',
-      property: 'isNaN',
-      message: 'Please use Number.isNaN instead',
-    }, {
-      property: '__defineGetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      property: '__defineSetter__',
-      message: 'Please use Object.defineProperty instead.',
-    }, {
-      object: 'Math',
-      property: 'pow',
-      message: 'Use the exponentiation operator (**) instead.',
-    }],
+    'no-restricted-properties': [
+      'error',
+      {
+        object: 'arguments',
+        property: 'callee',
+        message: 'arguments.callee is deprecated',
+      },
+      {
+        object: 'global',
+        property: 'isFinite',
+        message: 'Please use Number.isFinite instead',
+      },
+      {
+        object: 'self',
+        property: 'isFinite',
+        message: 'Please use Number.isFinite instead',
+      },
+      {
+        object: 'window',
+        property: 'isFinite',
+        message: 'Please use Number.isFinite instead',
+      },
+      {
+        object: 'global',
+        property: 'isNaN',
+        message: 'Please use Number.isNaN instead',
+      },
+      {
+        object: 'self',
+        property: 'isNaN',
+        message: 'Please use Number.isNaN instead',
+      },
+      {
+        object: 'window',
+        property: 'isNaN',
+        message: 'Please use Number.isNaN instead',
+      },
+      {
+        property: '__defineGetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
+        property: '__defineSetter__',
+        message: 'Please use Object.defineProperty instead.',
+      },
+      {
+        object: 'Math',
+        property: 'pow',
+        message: 'Use the exponentiation operator (**) instead.',
+      },
+    ],
     'no-restricted-syntax': [
       'error',
       {
@@ -187,18 +225,24 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'off',
-    'no-underscore-dangle': ['error', {
-      allow: [],
-      allowAfterThis: false,
-      allowAfterSuper: false,
-      enforceInMethodNames: true,
-    }],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: [],
+        allowAfterThis: false,
+        allowAfterSuper: false,
+        enforceInMethodNames: true,
+      },
+    ],
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: false,
-      allowTernary: false,
-      allowTaggedTemplates: false,
-    }],
+    'no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+        allowTaggedTemplates: false,
+      },
+    ],
     'no-unused-labels': 'error',
     'no-useless-call': 'off',
     'no-useless-catch': 'error',
@@ -206,43 +250,60 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
-    'no-useless-rename': ['error', {
-      ignoreDestructuring: false,
-      ignoreImport: false,
-      ignoreExport: false,
-    }],
+    'no-useless-rename': [
+      'error',
+      {
+        ignoreDestructuring: false,
+        ignoreImport: false,
+        ignoreExport: false,
+      },
+    ],
     'no-useless-return': 'error',
     'no-var': 'error',
     'no-void': 'error',
     'no-warning-comments': 'off',
     'no-with': 'error',
-    'object-shorthand': ['error', 'always', {
-      ignoreConstructors: false,
-      avoidQuotes: true,
-    }],
+    'object-shorthand': [
+      'error',
+      'always',
+      {
+        ignoreConstructors: false,
+        avoidQuotes: true,
+      },
+    ],
     'one-var': ['error', 'never'],
     'one-var-declaration-per-line': ['error', 'always'],
     'operator-assignment': ['error', 'always'],
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true,
-    }],
-    'prefer-const': ['error', {
-      destructuring: 'any',
-      ignoreReadBeforeAssign: true,
-    }],
-    'prefer-destructuring': ['error', {
-      VariableDeclarator: {
-        array: false,
-        object: true,
+    'prefer-arrow-callback': [
+      'error',
+      {
+        allowNamedFunctions: false,
+        allowUnboundThis: true,
       },
-      AssignmentExpression: {
-        array: true,
-        object: false,
+    ],
+    'prefer-const': [
+      'error',
+      {
+        destructuring: 'any',
+        ignoreReadBeforeAssign: true,
       },
-    }, {
-      enforceForRenamedProperties: false,
-    }],
+    ],
+    'prefer-destructuring': [
+      'error',
+      {
+        VariableDeclarator: {
+          array: false,
+          object: true,
+        },
+        AssignmentExpression: {
+          array: true,
+          object: false,
+        },
+      },
+      {
+        enforceForRenamedProperties: false,
+      },
+    ],
     'prefer-exponentiation-operator': 'off',
     'prefer-named-capture-group': 'off',
     'prefer-numeric-literals': 'error',
@@ -253,7 +314,11 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'consistent-as-needed', { keywords: false, unnecessary: true, numbers: false }],
+    'quote-props': [
+      'error',
+      'consistent-as-needed',
+      { keywords: false, unnecessary: true, numbers: false },
+    ],
     'radix': 'error',
     'require-await': 'off',
     'require-unicode-regexp': 'off',
@@ -264,27 +329,26 @@ module.exports = {
         ignoreCase: false,
         ignoreDeclarationSort: true,
         ignoreMemberSort: false,
-        memberSyntaxSortOrder: [
-          'none',
-          'all',
-          'multiple',
-          'single',
-        ],
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
       },
     ],
     'sort-keys': 'off',
     'sort-vars': 'off',
-    'spaced-comment': ['error', 'always', {
-      line: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!'], // space here to support sprockets directives
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          exceptions: ['-', '+'],
+          markers: ['=', '!'], // space here to support sprockets directives
+        },
+        block: {
+          exceptions: ['-', '+'],
+          markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
+          balanced: true,
+        },
       },
-      block: {
-        exceptions: ['-', '+'],
-        markers: ['=', '!', ':', '::'], // space here to support sprockets directives and flow comment types
-        balanced: true,
-      },
-    }],
+    ],
     'strict': ['error', 'never'],
     'symbol-description': 'error',
     'vars-on-top': 'error',
