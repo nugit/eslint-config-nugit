@@ -1,3 +1,26 @@
+# [4.0.0-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0...v4.0.0-beta.1) (2024-05-27)
+
+
+### Bug Fixes
+
+* fix security vulnerabilities ([6004ee7](https://github.com/nugit/eslint-config-nugit/commit/6004ee7bc0ebbe08f533dc47af7a407dc3327717))
+
+
+* feat!: upgrade minimum NodeJS version to 20.13 ([00566af](https://github.com/nugit/eslint-config-nugit/commit/00566afe46a3ca57153fe97b292a3f4f087216eb))
+
+
+### Features
+
+* update [@commitlint](https://github.com/commitlint) dependencies ([22a2668](https://github.com/nugit/eslint-config-nugit/commit/22a26688241ab2001cc416b7b629388cfbcd49fc))
+* update husky ([e4eac44](https://github.com/nugit/eslint-config-nugit/commit/e4eac44b0402ff9da77d302d6e22e32d08203ded))
+* update minor dependencies ([7951525](https://github.com/nugit/eslint-config-nugit/commit/79515255ca8a79c0b8ac22c34f325c11b883dd66))
+* update semantic-release dependencies ([842dc0d](https://github.com/nugit/eslint-config-nugit/commit/842dc0d65d22723d566795b25b30dc56a7addc48))
+
+
+### BREAKING CHANGES
+
+* minimum NodeJS version is 20.13
+
 # [3.0.0](https://github.com/nugit/eslint-config-nugit/compare/v2.0.3...v3.0.0) (2024-05-27)
 
 
