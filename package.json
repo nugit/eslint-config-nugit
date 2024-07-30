@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nugit",
-  "version": "4.0.1-beta.4",
+  "version": "4.0.1-beta.5",
   "description": "Nugit's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
-    "@babel/eslint-parser": "^7.24.8",
+    "@babel/eslint-parser": "^7.25.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/changelog": "^6.0.3",
@@ -48,7 +48,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.24.9",
-    "@babel/eslint-parser": "^7.24.8",
+    "@babel/eslint-parser": "^7.25.1",
     "eslint": "^8.57.0",
     "eslint-plugin-ft-flow": "^2.0.3",
     "eslint-plugin-import": "^2.29.1",
@@ -57,7 +57,7 @@
     "eslint-plugin-react-hooks": "^4.6.2"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.24.8",
+    "@babel/preset-env": "^7.25.0",
     "@babel/preset-flow": "^7.24.7",
     "@babel/preset-react": "^7.24.7",
     "confusing-browser-globals": "^1.0.11"
