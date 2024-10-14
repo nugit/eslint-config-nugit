@@ -1,3 +1,73 @@
+## [4.0.1-beta.10](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.9...v4.0.1-beta.10) (2024-10-14)
+
+
+### Bug Fixes
+
+* bump @babel/preset-react from 7.24.7 to 7.25.7 ([67dbbeb](https://github.com/nugit/eslint-config-nugit/commit/67dbbeb61699693d7672c360e9e7e6a12ac61507))
+
+## [4.0.1-beta.9](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.8...v4.0.1-beta.9) (2024-10-14)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.25.4 to 7.25.8 ([a54391a](https://github.com/nugit/eslint-config-nugit/commit/a54391a8007e77cef8d3059a970a43b9cf25c777))
+
+## [4.0.1-beta.8](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.7...v4.0.1-beta.8) (2024-10-07)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.24.7 to 7.25.7 ([0be9ca1](https://github.com/nugit/eslint-config-nugit/commit/0be9ca1390a153b38224b2d63bc01237100bd976))
+
+## [4.0.1-beta.7](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.6...v4.0.1-beta.7) (2024-08-26)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.25.3 to 7.25.4 ([ce8a720](https://github.com/nugit/eslint-config-nugit/commit/ce8a7209fbbd534127ef467d77dd3e179d6523ea))
+
+## [4.0.1-beta.6](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.5...v4.0.1-beta.6) (2024-08-05)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.25.0 to 7.25.3 ([5468e91](https://github.com/nugit/eslint-config-nugit/commit/5468e91391fb1b781f2582ab66d4a56437e79f39))
+
+## [4.0.1-beta.5](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.4...v4.0.1-beta.5) (2024-07-29)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.24.8 to 7.25.0 ([7ef77d4](https://github.com/nugit/eslint-config-nugit/commit/7ef77d4a362662dc21e7bf21a61a1ee394528d90))
+
+## [4.0.1-beta.4](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.3...v4.0.1-beta.4) (2024-07-15)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.24.7 to 7.24.8 ([9fcab3b](https://github.com/nugit/eslint-config-nugit/commit/9fcab3be7584365134cf8c4bc02dd7d1f7c9bb7f))
+
+## [4.0.1-beta.3](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.2...v4.0.1-beta.3) (2024-06-10)
+
+
+### Bug Fixes
+
+* bump @babel/preset-flow from 7.24.6 to 7.24.7 ([a396db5](https://github.com/nugit/eslint-config-nugit/commit/a396db5c7495ef597133a7dee5e773b84b459807))
+
+## [4.0.1-beta.2](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.1...v4.0.1-beta.2) (2024-06-10)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.24.6 to 7.24.7 ([7ce4b63](https://github.com/nugit/eslint-config-nugit/commit/7ce4b63c7b6a4f87e9f2972573acffbdfb146f65))
+
+## [4.0.1-beta.1](https://github.com/nugit/eslint-config-nugit/compare/v4.0.0...v4.0.1-beta.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* bump @babel/preset-react from 7.24.6 to 7.24.7 ([f04cf8f](https://github.com/nugit/eslint-config-nugit/commit/f04cf8f0a02f9b57d51d4a11020e13cfeec9755a))
+
 # [4.0.0](https://github.com/nugit/eslint-config-nugit/compare/v3.0.0...v4.0.0) (2024-05-28)
 
 
