@@ -1,3 +1,10 @@
+## [4.0.1-beta.13](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.12...v4.0.1-beta.13) (2024-10-28)
+
+
+### Bug Fixes
+
+* bump @babel/preset-env from 7.25.8 to 7.26.0 ([24eeeea](https://github.com/nugit/eslint-config-nugit/commit/24eeeeacdc274642e84e1207346c360a6b175323))
+
 ## [4.0.1-beta.12](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.11...v4.0.1-beta.12) (2024-10-28)
 
 
