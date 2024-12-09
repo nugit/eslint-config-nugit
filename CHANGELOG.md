@@ -1,3 +1,10 @@
+## [4.0.1-beta.14](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.13...v4.0.1-beta.14) (2024-12-09)
+
+
+### Bug Fixes
+
+* bump @babel/preset-react from 7.25.9 to 7.26.3 ([c121596](https://github.com/nugit/eslint-config-nugit/commit/c1215965d7e89c90454a2399085b3e69e101f952))
+
 ## [4.0.1-beta.13](https://github.com/nugit/eslint-config-nugit/compare/v4.0.1-beta.12...v4.0.1-beta.13) (2024-10-28)
 
 
