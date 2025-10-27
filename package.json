@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.27.7",
-    "@babel/eslint-parser": "^7.27.5",
+    "@babel/eslint-parser": "^7.28.5",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@semantic-release/changelog": "^6.0.3",
@@ -48,7 +48,7 @@
   },
   "peerDependencies": {
     "@babel/core": "^7.27.7",
-    "@babel/eslint-parser": "^7.27.5",
+    "@babel/eslint-parser": "^7.28.5",
     "eslint": "^8.57.0",
     "eslint-plugin-ft-flow": "^2.0.3",
     "eslint-plugin-import": "^2.29.1",
