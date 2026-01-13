@@ -57,7 +57,7 @@
     "eslint-plugin-react-hooks": "^4.6.2"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-env": "^7.28.6",
     "@babel/preset-flow": "^7.27.1",
     "@babel/preset-react": "^7.27.1",
     "confusing-browser-globals": "^1.0.11"
